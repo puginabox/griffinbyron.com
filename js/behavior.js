@@ -20,8 +20,13 @@ $(document).ready(function() {
 		return false;
 	});
 	
-
-
+	$('a.animation-btn').click(function() {
+		$('html, body').animate({ scrollTop:$('#animation').offset().top }, 1000,
+			function() {
+				parallax();
+			});
+		return false;
+	});
 
 // Mobile
 	$('a.mobile-btn').click(function() {
