@@ -1,8 +1,8 @@
 {
- "url" : "http://url/here.html", 
-  "email" : "project@hostname.com"
   "name" : "griffin byron",
-  "version" : "3.1",
+  "email" : "puginabox@gmail.com",
+  "url" : "http://griffinbyron.com/",
+  "version" : "0.3",
   "dependencies" : {
     "grunt": "~0.4.1",
     "grunt-contrib-watch": "~0.5.3",

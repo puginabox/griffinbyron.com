@@ -1,0 +1,471 @@
+
+body {
+  width: 100%;
+  // max-width: 1512px;
+  margin: 0 auto;
+  position: relative;
+} 
+header {
+  width: 100%;
+  margin: 0 auto;
+}
+.ads-left, .ads-right { 
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.banner img {
+  width: 70%;
+  max-width: 1512px;
+  height: auto;
+  padding-left: 13%;
+}
+.banner {
+  float: left;  
+  width: 100%;
+  margin: 10px 0;
+  height: auto;
+  &:hover {
+    background: none;
+  }
+  @include breakpoint(mobile) {  
+  display: block;
+  position: absolute; 
+  top: 35px;
+  z-index: 999;
+  }  
+}
+
+/*=========================== @ads-left ============================*/
+.ads-left {
+    float: left;
+    margin-right: 0.5%; 
+    width: 15%;
+    height: auto;
+  img {
+    max-width: 100%;
+    z-index: 9;
+  }
+  @include breakpoint(mobile) {
+    width: 100%;
+    margin: auto;
+        position: absolute;
+        top: 800px;
+        float: left;    
+  }
+  @include breakpoint(tablet) {
+    width: 30%;
+    margin: 0 1%; 
+    padding: 0;
+    min-width: 170px;
+  }
+}
+
+.food {
+    position: relative;
+    float: left;
+    height: auto;
+    @include breakpoint(mobile) {
+        // position: absolute;
+        // top: 900px;
+        // float: left;
+        display: block;
+        width: 100%;
+    } 
+    @include breakpoint(tablet) {
+       width: 100%;
+       margin: 0;
+       margin-bottom: 20px;
+    } 
+  }
+.food article {
+  float: left;
+  width: 94%;
+  height: auto;
+  padding: 8px;
+  margin-bottom: 20px;
+  background: white;  
+  ul {
+    padding: 0;
+    width: 100%;
+  }
+  ul li {
+    font-size: 0.8rem;
+    line-height: 80%;
+    padding-bottom: 4px;
+    font-style: none;
+    font-weight: bold;
+    @include breakpoint(tablet) {
+        font-size: 0.9rem;
+        line-height: 80%;
+        padding: 1px;
+        margin: 0 0 5px 10px;     
+      }               
+  }     
+  @include breakpoint(mobile) {
+      width: 100%;
+  }
+  p {
+  	font-size: 0.75rem;
+  	line-height: 120%;
+      @include breakpoint(tablet) {
+         width: 80%;
+         padding: 0;
+         text-align: left;
+        margin: 0 0 5px 22px;     
+      } 
+      @include breakpoint(mobile) {
+         width: 80%;
+         padding: 0;
+         text-align: left;
+        margin: 0 0 5px 0;     
+      }              
+  } 
+  h2 {
+      margin-top: 5px;
+      font-size: 0.8rem;
+      margin: 5px 0;
+      text-align: left;
+      width: 90%;
+      @include breakpoint(tablet) {
+         width: 80%;
+         font-size: 0.7rem;
+         margin: 5px auto;
+         text-align: center;
+      }       
+  } 
+
+}
+.food a {
+  font-family: $font-two;
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
+  &:hover {
+      color: white;
+      text-decoration: none;
+      background: $neoBlack;
+  } 
+  @include breakpoint(mobile) {
+      font-size: 0.6rem;
+      margin-left: 20px;
+  }
+  @include breakpoint(tablet) {
+      font-size: 0.7rem;
+      display: block;
+      margin: 20px auto 60px 8px;
+      padding: 0;
+  }    
+}
+.social {
+  background: white;
+  @include centerizer;
+    @include breakpoint(mobile) {
+      display: none;
+    }    
+  }
+.bluey {
+     color: $flatBlue; 
+}
+/*=========================== @content ============================*/
+.content {
+    margin: 0 auto;  
+  float: left;
+  width: 61%;
+  margin: 0 0.5%;
+  padding-bottom: 50px;
+  height: auto;
+  @include breakpoint(mobile) {
+        display: block;
+        position: absolute;
+        top: 80px;
+        width: 100%;
+        left: 0;
+		    margin: 0;
+        padding: 0;        
+  }     
+  @include breakpoint(tablet) {
+        width: 67%;
+        float: left;
+        height: auto;
+        margin: 0;
+        padding: 0;
+  }    
+}
+
+/*--------------@show --------------------*/
+.show {
+    position: relative;
+    float: left;
+    width: 98%;
+    min-height: 110px;
+    margin-bottom: 13px;
+    padding: 5px;
+    padding-bottom: 14px;
+    background: white;
+    @include breakpoint(mobile) {
+        float: left;
+        display: block;
+        width: 92%;
+        left: 2.5%;
+    }
+    @include breakpoint(tablet) {
+        width: 100%;
+        height: auto;
+         min-height: 150px;
+        float: left;
+        padding: 0;
+        padding-bottom: 5px;
+        margin: 0 0 5px 0;
+    }  
+    .img {
+        position: absolute;
+        height: auto;
+        width: 120px;
+        height: 120px;
+        overflow: hidden;
+        border-radius: 12px;
+        @include breakpoint(mobile) {
+          display: none;
+        }               
+        @include breakpoint(tablet) {
+          // position: relative;
+          display: inline-block;
+          width: 90px;
+          height: 90px;
+          padding: 5px;
+          margin: 0;
+          img {
+            width: 100%;
+            border-radius: 12px;
+          }
+        }               
+    }
+}
+.content .show .stats {
+    width: auto;
+    height: auto;
+    padding-left: 18%;
+    @include breakpoint(mobile) {
+        width: 96%;
+        display: block;
+        @include centerizer;
+        margin: 0;
+        padding: 5px;
+        float: left;
+        left: 0;
+    } 
+    @include breakpoint(tablet) {
+        position: absolute;
+        left: 105px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        height: auto;
+        display: inline-block;
+    } 
+    .info {
+      width: 100%;
+      height: auto;
+      padding: 0;
+      margin: 0;
+      margin-left: 1%;
+      @include breakpoint(mobile) {
+        padding: 5px 0;
+        width: 97%;
+        margin: 0;
+      }
+      @include breakpoint(tablet) {
+        padding: 0;
+        width: 100%;
+        margin: 0;
+      }      
+      a {
+        display: inline;
+        color: $neoBlack;
+        margin-left: 20px;        
+        @include button-hover;
+        @include breakpoint(mobile) {
+            margin: 0;
+            font-size: 0.9rem;
+            padding: 0;
+        }
+        @include breakpoint(tablet) {
+            margin: 0;
+            width: 20%;
+            right: 20px; 
+            font-size: 0.9rem;
+            padding: 2px;            
+        }            
+      }
+      h3 {
+          width: 95%;
+          font-size: 1rem;
+          padding: 5px;
+          margin: 0 auto 0 2px;
+          color: white;
+          background: $flatBlue;
+          @include breakpoint(mobile) {
+            width: 100%;
+            left: 4px;
+            margin: 4px;
+            padding: 5px;
+             font-size: 0.8rem;
+            text-align: left;
+          }
+          @include breakpoint(tablet) {
+            width: 71%;
+            margin: 5px 0;
+            padding: 2px; 
+            text-align: left;           
+            font-size: 0.8rem;
+          }
+      } 
+      h4 {
+          display: inline;
+          font-size: 0.9rem;
+          height: auto;
+          padding: 5px 0;
+          margin: 10px 0;
+          @include breakpoint(mobile) {
+            width: 100%;
+            left: 0;
+            padding: 1px 0;
+            margin: 0;
+            line-height: 100%;
+            font-size: 0.7rem;
+            display: inline-block;
+            text-align: left;            
+          }          
+          @include breakpoint(tablet) {
+            width: 90%;
+            display: block;
+            font-size: 0.7rem;
+            margin: 5px 0;
+            padding: 0;
+            text-align: left;
+          }
+      }
+    }
+}
+.more {
+  width: auto;
+  height: auto;
+  padding-left: 19%; 
+  padding-top: 5px;          
+ @include breakpoint(tablet) {
+    width: 70%;
+    padding: 0;
+    margin: 50px 0 5px 105px; 
+    // position: relative;
+    font-size: 0.8rem;
+    // overflow: hidden;
+  }
+  p { 
+      font-size: 0.8rem;
+      margin: 0;
+      padding: 0;
+      @include breakpoint(tablet) {
+        width: 100%;
+        // float: right;
+        margin: 0;
+        padding: 20px 0;
+      } 
+        @include breakpoint(mobile) {
+      display: none;
+    }             
+  }                 
+}
+#button-strip {
+    width: 100%;
+        height: 50px;
+    float: left;
+    @include centerizer;
+}
+/*=========================== @ads-right ============================*/
+.ads-right {
+  left: 77.5%;
+  // top: 306px;
+  margin-left: 0.5%; 
+  padding: 0;
+  padding-bottom: 20px;
+  text-align: center;
+  width: 22%;
+  height: auto;
+  @include breakpoint(mobile) {
+        display: none;
+  }
+  @include breakpoint(tablet) {
+        display: block;
+        width: 90%;
+        margin: 10px 5%;
+  }  
+  h2 {
+  	font-size: 0.9rem;
+  	margin-top: 10px;
+  }
+  h3 {
+    position: absolute;
+    font-size: 0.7rem;
+    line-height: 12px;
+    background: $flatBlue;
+    padding: 2px;
+    margin: 0 0.5rem;
+    overflow: hidden;
+    text-align: left;
+    top: 80px;
+    z-index: 9;
+  }       
+}  
+
+.ads-right .just-announced {
+  display: inline-block;
+  position: relative;
+  width: 110px;
+  height: 110px;    
+  margin: 0 1px;
+  background: white;
+  overflow: hidden;
+  border-radius: 12px;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }  
+}
+/*=========================== @more shows ============================*/
+.more-shows  {
+  width: 100%;
+  @include centerizer;
+  height: auto;
+  font-size: 1.4rem;
+  a {
+    font-weight: bold;
+    padding: 10px 0;
+    text-transform: lowercase;  
+    color: $coal;
+    &:hover {
+      color: white;
+    }
+    @include breakpoint(mobile) {
+      display: block;
+      padding-top: 10px;
+    }
+    @include breakpoint(tablet) {
+      // float: left;
+      width: 80%;
+      padding-left: 10%;
+    }
+
+
+  }
+}
+
+
+
+
+
+
+
+
+
+

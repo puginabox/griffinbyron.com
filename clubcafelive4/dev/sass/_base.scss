@@ -1,0 +1,125 @@
+
+
+html, body {
+  font-family: $font-one;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: $neoBlack;
+}
+a {
+  font-family: $font-one;  
+  text-decoration: none;
+  text-transform: uppercase;  
+  color: $flatBlue;
+  @include single-transition(all, .5s, ease-out);  
+  &:hover {
+    color: white;
+    background: $neoBlack;
+  }
+}
+p {
+  font-family: $font-four; 
+  line-height: 120%;
+  font-weight: 100; 
+  color: $coal;
+  padding-bottom: 2px; 
+  text-align: left;
+  @include breakpoint(mobile) {
+      margin: 1rem auto;
+      text-align: justify;
+      width: 80%;
+  }  
+  @include breakpoint(tablet) {
+      padding: 2rem;
+      text-align: justify;
+  }    
+}
+h1 {
+  display: none; // for DOM Outline
+}
+h2 {
+  width: 80%;
+  font-size: 1rem;  
+  font-family: $font-two;
+  line-height: 20px;
+  font-weight: 600;
+  padding: 5px;  
+  color: white;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  text-transform: uppercase;
+  background: $flatBlue;
+  // border-bottom: 4px double $coal;  
+}
+h3 {
+  font-size: 1.1rem;  
+  font-family: $font-two;
+  width: 90%;
+  line-height: 18px;
+  font-weight: 600;
+  padding: 10px;  
+  color: white;
+  text-transform: uppercase;
+  @include breakpoint(mobile) {
+      width: 80%;
+      font-size: 1.3rem;
+      line-height: 18px;
+      font-weight: 200;
+  }  
+  @include breakpoint(tablet) {
+      width: 90%;
+      line-height: 18px;
+      font-weight: 200;
+  }  
+}
+h4 {
+  font-size: 1.2rem;  
+  font-family: $font-two;
+  line-height: 20px;
+  font-weight: 600;
+  padding: 5px;  
+  color: $coal;
+  text-transform: uppercase;
+  @include breakpoint(mobile) {
+      width: 50%;
+      padding: 15px; 
+      line-height: 50px;
+  }  
+  @include breakpoint(tablet) {
+      width: 100%;
+      text-align: center;
+  }    
+}
+ul {
+  list-style: none;
+  padding-left: 3px;
+  @include breakpoint(mobile) {
+    // padding-left: 5rem;
+    // padding-bottom: 2rem
+  }
+  @include breakpoint(tablet) {
+    padding-left: 0.7rem;
+    padding-bottom: 2rem
+  }  
+  li {
+    font-weight: bold;
+    font-size: 1.0rem;
+    padding: 4px 0;
+    text-align: left;
+      @include breakpoint(mobile) {
+          padding: 0.1rem 0;
+    }
+      @include breakpoint(tablet) {
+          padding: 0.1rem 0;
+    }
+  }
+} 
+
+
+
+
+
+
+
+
