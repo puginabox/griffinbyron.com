@@ -1,0 +1,15 @@
+
+
+//------------ @Navigation --------------------| 
+
+.main-nav {
+    h1 {
+        display: none;
+    }
+//~~~~~~~~~~~~~~~ @Media Queries ~~~~~~~~~~~~~~| 
+    @include breakpoint(tablet) {
+          height: 40px;
+    }
+            
+} // end of .main-nav
+

@@ -1,0 +1,35 @@
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+} 
+header {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*=========================== @content ============================*/
+.content {
+  margin: 0 auto;  
+  float: left;
+  width: 61%;
+  margin: 0 0.5%;
+  height: auto;
+
+
+  @include breakpoint(mobile) {       
+  }     
+  @include breakpoint(tablet) {
+  }    
+}
+
+
+
+
+
+
+
+
+
+
