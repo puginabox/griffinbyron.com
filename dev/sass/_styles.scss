@@ -800,22 +800,22 @@ background: url(../img/mobile/pearloak-icon[large].png) 0 0 no-repeat;
 }
 #design h4 {
 	text-align: left;
+	width: 30%;
 }
 
 /******************** @animation ****************/
 #animation {
 	position: absolute;
 	float: left;
-	top: 6900px;
-	width: 100%;
+	top: 7300px;
+	width: 50%;
 	left: 0;
 	right: 0;
 	height: auto;	
-	margin: 0;
-	text-align: left;
-	padding: 0.2em;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0.2em 0;
 	z-index: 50;
-	background: blue;
 	@include breakpoint(mobile) {
 		top: 6700px;		
 		margin: 0 auto;
@@ -831,10 +831,11 @@ background: url(../img/mobile/pearloak-icon[large].png) 0 0 no-repeat;
 	}
 }
 #animation h1 {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0.2em;
 	text-indent: 1em;
-	text-align: left;
+	text-align: middle;
+	font-style: underline;
 	@include breakpoint(mobile) {
 		margin: 0;
 		padding: 0;
@@ -846,10 +847,7 @@ background: url(../img/mobile/pearloak-icon[large].png) 0 0 no-repeat;
 		margin: 0;
 		padding: 0.2em;
 		font-size: 2em;
-	}
-	// @include breakpoint(large) {
-	// 	padding-top: 200px;	
-	// }			
+	}		
 }
 #animation h2 {
 	margin: 0;
@@ -870,7 +868,7 @@ background: url(../img/mobile/pearloak-icon[large].png) 0 0 no-repeat;
 }
 #animation p {
 	display: block;
-	width: 70%;
+	width: 100%;
 	height: auto;
 	margin: 0 auto;
 	text-align: justify;
@@ -887,7 +885,6 @@ background: url(../img/mobile/pearloak-icon[large].png) 0 0 no-repeat;
 		}
 		@include breakpoint(large) {
 			margin: 0;	
-			width: 60%;
 		}		
 }
 #animation p:nth-child(3) {
@@ -902,7 +899,7 @@ background: url(../img/mobile/pearloak-icon[large].png) 0 0 no-repeat;
 /******************** @me ****************/
 #me {
 	position: absolute;
-	top: 7600px;	
+	top: 7900px;	
   	width: 60%;
 	height: auto;
 	left: 0;
@@ -987,7 +984,7 @@ background: url(../img/mobile/pearloak-icon[large].png) 0 0 no-repeat;
 /* =========================== @stats ============================ */
 #stats  {
 	position: absolute;		
-	top: 8500px;
+	top: 9300px;
 	width: 100%;
 	margin: 1em auto;
 	text-align: center;
@@ -1002,13 +999,17 @@ background: url(../img/mobile/pearloak-icon[large].png) 0 0 no-repeat;
 		width: 80%;		
 	}
 }
+#stats h1 {
+	margin: 20px 0;
+	padding: 0;
+}
 #stats aside {	
-	width: 90%;
+	width: 40%;
 	height: auto;
-	padding: 0.4em;
-	margin:  0.4em auto;
-	left: 0;
-	right: 0;
+	padding: 10px;
+	margin:  0 auto;
+	// left: 0;
+	// right: 0;
 	text-align: center;
 	@include breakpoint(mobile) {
 		position: relative;			
@@ -1026,8 +1027,11 @@ background: url(../img/mobile/pearloak-icon[large].png) 0 0 no-repeat;
 	}	
 }
 #stats aside p {	
-	padding: 1em;
+	padding: 10px;
 	text-align: justify;	
+	&:nth-child(4) {
+		padding-top: 200px;
+	}
 	@include breakpoint(mobile) {
 		padding: 0.5em;
 		font-size: 0.7em;
@@ -1036,11 +1040,14 @@ background: url(../img/mobile/pearloak-icon[large].png) 0 0 no-repeat;
 		padding: 1em;
 	}
 	@include breakpoint(large) {
-		width: 60%;		
-		padding: 0 2em;
+		width: 100%;		
+		padding: 0;
+		padding-bottom: 15px;
 	}	
 }
 #stats aside h4 {
+	padding: 0;
+	margin: 0 auto;
 	@include breakpoint(mobile) {
 	text-align: left;
 	font-size: 1.1em;
@@ -1051,6 +1058,48 @@ background: url(../img/mobile/pearloak-icon[large].png) 0 0 no-repeat;
 	}
 }	
 
+/* =========================== @process ============================ */
+#process {
+	position: absolute;
+	float: left;
+	top: 1900px;
+	width: 50%;
+	left: 0;
+	right: 0;
+	height: auto;	
+	margin: 0 auto;
+	text-align: left;
+	padding: 0.2em 0;
+	z-index: 50;
+	@include breakpoint(mobile) {
+		top: 6700px;		
+		margin: 0 auto;
+		text-align: center;		
+		left: 0;
+		right: 0;
+		padding: 1em 0.2em;
+	}
+	@include breakpoint(tablet) {
+		top: 12300px;		
+		margin: 2em;
+		padding: 0;
+	}
+}
+#process blockquote {
+	font-style: italic;
+	padding-bottom: 10px;
+}
+#process h2 {
+	margin: 10px 0;
+	padding: 0;
+}
+#process p {
+	margin: 0;
+	padding: 0;		
+}
+#process .portfolio-nav {
+	padding-top: 200px;
+}
 /* =========================== @experience ============================ */
 #experience  {
 	position: absolute;		
@@ -1127,7 +1176,7 @@ background: url(../img/mobile/pearloak-icon[large].png) 0 0 no-repeat;
 #contact {
 	position: absolute;
 	float: left;
-	top: 670px;	
+	top: 1180px;	
   	width: 350px;
 	height: 350px;	
 	padding: 1em 0;
