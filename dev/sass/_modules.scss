@@ -14,7 +14,8 @@
 		border-bottom: 1px solid $neoBlack;
 	}
 	@include breakpoint(tablet) {
-		width: 100%;
+		width: 40%;
+		padding: 0;
 		border-bottom: 1px solid $neoBlack;
 	}
 }

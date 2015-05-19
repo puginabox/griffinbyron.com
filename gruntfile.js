@@ -1,6 +1,5 @@
 
 
-
 // it all happens in here. 
 // each package is loaded (grunt.loadNpmTasks) then the various tasks in the grunt.initConfig({}) function are carried out.
 
@@ -11,11 +10,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-compass');   // load compass plugin
   grunt.initConfig({
 
-//======================================= Compress all js files in dev dir ============|    
+//======================================= Compress all js files in components dir ============|    
     uglify: {
       my_target: {
         files: {
-          'js/behavior.js': ['dev/js/*.js']
+          'js/behavior.js': ['components/js/*.js']
         } //files
       } //my_target
     }, //uglify    // DONT FORGET THE COMMA AFTER EACH NEW TASK!!!!
@@ -31,7 +30,7 @@ module.exports = function(grunt) {
     watch: {
       options: { livereload: true },
       scripts: {
-        files: ['dev/js/*.js'],   // files to be watched
+        files: ['components/js/*.js'],   // files to be watched
         tasks: ['uglify']                 //  tasks to run on change
       }, //scriptS
 //====================================================== Sass pre-processing ===================|      

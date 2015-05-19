@@ -1,0 +1,1284 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,900);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+p, li, a, h1, h2, h3, h4, h5 {
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+}
+
+p {
+  font-weight: 100;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  color: #576f7c;
+}
+
+h2 {
+  font-size: 2rem;
+  padding: 0.6rem 0;
+  line-height: 2;
+  font-weight: 400;
+  color: #fa550a;
+}
+
+a {
+  color: #3f1224;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0 !important;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  text-align: center;
+  position: relative;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 12px;
+  /* for rems */
+  background: #c6d2d6;
+}
+
+header h1 {
+  display: none;
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  background: lightgray;
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: center;
+}
+
+* {
+  box-sizing: inherit;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: .6s;
+  transition-duration: .6s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+#main-menu {
+  width: 100%;
+  top: 0;
+  height: 100px;
+  list-style: none;
+  background: rgba(87, 111, 124, 0.8);
+  border-bottom: 1px solid rgba(63, 18, 36, 0);
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  position: fixed;
+  z-index: 999999;
+}
+
+#main-menu:hover {
+  opacity: 1;
+  background: #576f7c;
+  border-bottom: 1px solid rgba(63, 18, 36, 0.2);
+}
+
+#main-menu ul {
+  list-style: none;
+  display: inline;
+  overflow: hidden;
+}
+
+#main-menu ul li {
+  display: inline-block;
+  margin: 1rem;
+  padding: 20px 0;
+}
+
+#main-menu ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  opacity: 1;
+  color: #3f1224;
+  background: rgba(63, 18, 36, 0);
+  padding: 45px 1rem;
+  z-index: 999;
+}
+
+#main-menu ul li a:hover {
+  opacity: 0.5;
+  color: #c6d2d6;
+  background: #3f1224;
+  z-index: 9999;
+}
+
+nav[role="navigation"] a:empty {
+  display: none;
+  pointer-events: none;
+}
+
+.mobile header {
+  width: 100%;
+  background: #3f1224;
+  background: none;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  position: fixed;
+  text-align: right;
+  right: 0;
+  top: 0;
+  z-index: 9999999;
+}
+
+.hamburger-button {
+  background: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50px;
+  line-height: 45px;
+  padding: 0px 15px 0px 15px;
+  color: #3f1224;
+  border: 0;
+  font-size: 2.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000;
+}
+
+.cross-hamburger {
+  background: none;
+  position: fixed;
+  top: 0px;
+  width: 50px;
+  right: 0;
+  padding: 0px 5px 0px 15px;
+  color: #fff;
+  border: 0;
+  font-size: 3rem;
+  line-height: 65px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 1000000;
+}
+
+.hamburger-menu {
+  z-index: 100000;
+  font-weight: bold;
+  font-size: 0.8em;
+  width: 100%;
+  margin: 0 auto;
+  background: #3f1224;
+  padding: 0;
+  display: block;
+  position: fixed;
+  padding: 0;
+  top: 0;
+  text-align: center;
+  list-style-type: none;
+  list-style-image: none;
+}
+
+.hamburger-menu li {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px 0 15px 0;
+  border-bottom: rgba(198, 210, 214, 0.4) 1px solid;
+}
+
+.hamburger-menu li:hover {
+  background: #3f1224;
+  padding: 15px 0 15px 0;
+  border-bottom: rgba(198, 210, 214, 0.4) 1px solid;
+}
+
+.hamburger-menu ul li a {
+  text-decoration: none;
+  margin: 0px;
+  color: #fff;
+}
+
+.hamburger-menu ul li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hamburger-menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.mobile {
+  margin: 0 auto;
+  text-align: center;
+  display: none;
+}
+
+section, footer {
+  float: left;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0;
+  clear: both;
+}
+
+section article.wrapper {
+  margin-top: 90px;
+}
+
+/*----------------- About -------------*/
+#about {
+  height: auto;
+  overflow: hidden;
+  margin: 80px auto;
+}
+#about h1 {
+  display: none;
+  /* hidden for SEO */
+}
+#about img.banner {
+  position: absolute;
+  left: 0.5%;
+  top: 100px;
+  max-width: 400px;
+}
+#about div, #about aside {
+  height: 400px;
+  padding: 5px 0;
+  margin: 5px 0;
+  text-align: left;
+}
+#about div {
+  float: left;
+  width: 37%;
+}
+#about aside {
+  float: right;
+  width: 56%;
+}
+#about aside p {
+  width: 90%;
+}
+
+#the-team {
+  width: 100%;
+  float: left;
+  display: block;
+  margin: 0px auto;
+  padding: 0;
+  text-align: center;
+  z-index: 9999999;
+}
+#the-team .team {
+  display: inline-block;
+  width: 33.3333%;
+  margin: 20px 0;
+  padding: 0;
+  height: 400px;
+  text-align: center;
+}
+#the-team .team span {
+  visibility: hidden;
+  width: 280px;
+  height: 200px;
+  display: block;
+  text-align: center;
+}
+#the-team .team img {
+  max-width: 100%;
+  width: 280px;
+  height: 200px;
+}
+#the-team .team p {
+  font-size: 0.9rem;
+  padding: 5px 5%;
+  margin: 5px auto;
+}
+#the-team .team h3 {
+  font-size: 1.6rem;
+  padding: 10px 0;
+}
+
+#jackie-simpson {
+  background: url(../images/team/jackie-simpson.jpg) top center/280px 200px no-repeat;
+}
+
+#phil-knight {
+  background: url(../images/team/phil-knight.jpg) top center/280px 200px no-repeat;
+}
+
+#mike-todd {
+  background: url(../images/team/mike-todd.jpg) top center/280px 200px no-repeat;
+}
+
+#aaron-callen {
+  background: url(../images/team/aaron-callen.jpg) top center/280px 200px no-repeat;
+}
+
+#jason-grange {
+  background: url(../images/team/jason-grange.jpg) top center/280px 200px no-repeat;
+}
+
+#gregg-arch {
+  background: url(../images/team/gregg-arch.jpg) top center/280px 200px no-repeat;
+}
+
+#al-williams {
+  background: url(../images/team/al-williams.jpg) top center/280px 200px no-repeat;
+}
+
+#scott-pritchard {
+  background: url(../images/team/scott-pritchard.jpg) top center/280px 200px no-repeat;
+}
+
+#chris-stevens {
+  background: url(../images/team/chris-stevens.jpg) top center/280px 200px no-repeat;
+}
+
+/*----------------- Services -------------*/
+#services {
+  padding: 4px 0;
+  margin: 0;
+}
+#services h2 {
+  color: #3f1224;
+  font-size: 2rem;
+  padding: 0;
+  line-height: 1;
+}
+#services article {
+  width: 100%;
+  margin: inherit 0 inherit 0;
+}
+#services div {
+  display: inline-block;
+  width: 24%;
+  margin: 20px 0;
+  padding: 0;
+  height: 350px;
+  text-align: left;
+}
+#services div .services-wrapper {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+#services div p {
+  font-size: 0.8rem;
+  padding: 5px 5% 2px 0;
+  color: #1e1914;
+}
+#services div h3 {
+  font-size: 1.4rem;
+  margin: 25px 0;
+}
+#services div ul {
+  list-style: circle;
+  width: 80%;
+  padding: 0 20px;
+  margin: 0;
+  color: #c6d2d6;
+}
+#services div ul li {
+  font-size: 0.6rem;
+  padding: 3px 0;
+  line-height: 160%;
+}
+
+#services .wrapper div span.repairs {
+  width: 240px;
+  height: 300px;
+  display: block;
+  background: url(../images/services/repairs.png) top center no-repeat;
+  background-size: 240px 300px;
+}
+
+#services .wrapper div span.certification {
+  width: 240px;
+  height: 300px;
+  display: block;
+  background: url(../images/services/certification.png) top center no-repeat;
+  background-size: 240px 300px;
+}
+
+#services .wrapper div span.electrical {
+  width: 240px;
+  height: 300px;
+  display: block;
+  background: url(../images/services/electrical.png) top center no-repeat;
+  background-size: 240px 300px;
+}
+
+#services .wrapper div span.audio {
+  width: 240px;
+  height: 300px;
+  display: block;
+  background: url(../images/services/audio.png) top center no-repeat;
+  background-size: 240px 300px;
+}
+
+/*----------------- Testimonials -------------*/
+#testimonials {
+  background: #faaa00;
+}
+#testimonials h2 {
+  color: #3f1224;
+}
+#testimonials .bubble-triangle {
+  margin-left: 50px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100px 70px 0 0;
+  border-color: #c6d2d6 transparent transparent transparent;
+}
+#testimonials .wrapper blockquote {
+  width: 20%;
+  height: auto;
+  display: inline-block;
+  margin: 0;
+  padding: 5px 0;
+}
+#testimonials blockquote p.bubble {
+  font-style: italic;
+}
+#testimonials blockquote p.bubble cite {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.8;
+  font-weight: 400;
+  text-align: right;
+}
+#testimonials .wrapper blockquote .bubble {
+  width: 70%;
+  height: auto;
+  padding: 20px;
+  overflow: hidden;
+  font-size: 0.7rem;
+  line-height: 1.2;
+  color: #3f1224;
+  background: #c6d2d6;
+  border-radius: 25px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+}
+#testimonials .wrapper blockquote .bubble-triangle {
+  margin-top: -50px;
+  margin-left: 50px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 80px 70px 0 0;
+  border-color: #c6d2d6 transparent transparent transparent;
+}
+
+#brands {
+  height: 300px;
+}
+#brands ul {
+  display: block;
+  height: 200px;
+  width: 100%;
+  background: green;
+  list-style: none;
+}
+#brands ul li {
+  display: inline-block;
+  width: 8%;
+  margin: 0 1%;
+  height: 100%;
+  background: orange;
+}
+#brands h2 {
+  margin-top: -40px;
+  font-size: 2.4rem;
+  color: #3f1224;
+}
+
+/*----------------- Contact -------------*/
+#contact h2 {
+  margin-top: -40px;
+  color: #1e1914;
+}
+
+#twitter-feed {
+  display: inline-block;
+  width: 25%;
+}
+
+#hours, #first-time {
+  height: 407px;
+  margin: 0 0.1%;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+}
+
+#estimate {
+  float: right;
+  width: 75%;
+}
+#estimate h3 {
+  font-size: 1.3rem;
+  margin: 1.2rem 0;
+  padding: 5px 0;
+  border-top: 1px solid rgba(87, 111, 124, 0.3);
+}
+#estimate p {
+  font-size: 0.9rem;
+  padding: 0 5px;
+  margin: 5px auto;
+}
+
+#first-time {
+  float: right;
+  width: 37%;
+  padding: 0;
+  margin: 0 10px 0 0;
+}
+#first-time P {
+  text-align: left;
+  padding: 10px 0;
+  margin-left: 10%;
+}
+
+#hours {
+  width: 60%;
+}
+#hours span {
+  font-weight: bold;
+}
+
+#twitter-widget-0 {
+  max-width: none !important;
+  width: 100% !important;
+  position: relative !important;
+}
+
+form {
+  margin: 5px auto;
+  margin-left: 10%;
+  text-align: center;
+}
+
+input {
+  border-radius: 3px;
+  background-color: #fff;
+  font-family: inherit;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: rgba(0, 0, 0, 0.75);
+  display: block;
+  font-size: 0.9rem;
+  margin: 1rem;
+  padding: 0.2rem;
+  width: 80%;
+}
+
+.button {
+  cursor: pointer;
+  background: rgba(87, 111, 124, 0);
+}
+.button:hover {
+  background: rgba(87, 111, 124, 0.6);
+}
+
+/*----------------- Footer --------------------*/
+#main-footer {
+  height: 300px;
+  padding: 0;
+  margin: 0;
+}
+#main-footer sup {
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 1.3rem;
+  margin: 1.2rem 0;
+  padding: 5px 0;
+  border-top: 1px solid rgba(87, 111, 124, 0.3);
+}
+
+#map {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 190px;
+  margin: 0 auto;
+  max-width: none !important;
+  overflow: hidden;
+  transform: translateZ(0px);
+}
+#map img {
+  opacity: 0.6;
+}
+
+/*----------------------- @Desktop -----------------------------*/
+/*----------------------- @Large Screens -----------------------------*/
+@media all and (min-width: 1201px) {
+  body::before {
+    content: "Large screens media query (breakpoint: 901px)";
+    letter-spacing: 2px;
+    display: block;
+    text-align: center;
+    background: rgba(0, 178, 255, 0.6);
+    color: #FFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 5px 0;
+    z-index: 9999999999999;
+  }
+}
+/*----------------------- @Tablets -----------------------------*/
+@media all and (min-width: 601px) and (max-width: 900px) {
+  #burger-menu {
+    display: none;
+  }
+
+  #main-menu {
+    height: 50px;
+  }
+
+  #main-menu ul li {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 10px 0;
+  }
+
+  #main-menu ul li a {
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    padding: 0.4rem 0;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  section article.wrapper {
+    margin-top: 0;
+  }
+
+  /*----------------- About -------------*/
+  #about {
+    margin: 0;
+    height: 1840px;
+  }
+  #about img.banner {
+    position: absolute;
+    left: 0.01%;
+    width: 230px;
+  }
+  #about div, #about aside {
+    height: 300px;
+    padding: 5px 0;
+    margin: 5px 0;
+  }
+  #about div {
+    width: 30%;
+  }
+  #about aside {
+    width: 56%;
+    padding-top: 60px;
+  }
+  #about aside p {
+    width: 90%;
+  }
+
+  #the-team {
+    margin: 0;
+    padding: 0;
+  }
+  #the-team .wrapper {
+    margin-top: 20px;
+  }
+  #the-team .wrapper .team .image-container img {
+    width: 210px;
+    height: 150px;
+  }
+  #the-team .team {
+    margin: 0;
+    padding: 0;
+    width: 33.33%;
+    height: 450px;
+  }
+  #the-team .team p {
+    font-size: 0.9rem;
+    padding: 5px 5%;
+    margin: 5px auto;
+  }
+  #the-team .team h3 {
+    font-size: 1.6rem;
+    padding: 10px 0;
+  }
+
+  #jackie-simpson {
+    background: url(../images/team/jackie-simpson-tablet.jpg) top center no-repeat;
+    background-size: 210px 150px;
+  }
+
+  #phil-knight {
+    background: url(../images/team/phil-knight-tablet.jpg) top center no-repeat;
+    background-size: 210px 150px;
+  }
+
+  #mike-todd {
+    background: url(../images/team/mike-todd-tablet.jpg) top center no-repeat;
+    background-size: 210px 150px;
+  }
+
+  #aaron-callen {
+    background: url(../images/team/aaron-callen-tablet.jpg) top center no-repeat;
+    background-size: 210px 150px;
+  }
+
+  #jason-grange {
+    background: url(../images/team/jason-grange-tablet.jpg) top center no-repeat;
+    background-size: 210px 150px;
+  }
+
+  #gregg-arch {
+    background: url(../images/team/gregg-arch-tablet.jpg) top center no-repeat;
+    background-size: 210px 150px;
+  }
+
+  #al-williams {
+    background: url(../images/team/al-williams-tablet.jpg) top center no-repeat;
+    background-size: 210px 150px;
+  }
+
+  #scott-pritchard {
+    background: url(../images/team/scott-pritchard-tablet.jpg) top center no-repeat;
+    background-size: 210px 150px;
+  }
+
+  #chris-stevens {
+    background: url(../images/team/chris-stevens-tablet.jpg) top center no-repeat;
+    background-size: 210px 150px;
+  }
+
+  /*----------------- Services -------------*/
+  #services h2 {
+    font-size: 2rem;
+    padding: 0;
+    line-height: 1;
+  }
+  #services article {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #services div {
+    width: 48%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+  }
+  #services div span {
+    margin: 0 auto;
+    text-align: center;
+  }
+  #services div .services-wrapper {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    margin-left: 5%;
+    text-align: left;
+  }
+  #services div img {
+    max-width: 100%;
+    width: 200px;
+    height: 250px;
+  }
+
+  #services .wrapper div span.repairs {
+    width: 200px;
+    height: 250px;
+    display: block;
+    background: url(../images/services/repairs-tablet.png) top center no-repeat;
+    background-size: 200px 250px;
+  }
+
+  #services .wrapper div span.certification {
+    width: 200px;
+    height: 250px;
+    display: block;
+    background: url(../images/services/certification-tablet.png) top center no-repeat;
+    background-size: 200px 250px;
+  }
+
+  #services .wrapper div span.electrical {
+    width: 200px;
+    height: 250px;
+    display: block;
+    background: url(../images/services/electrical-tablet.png) top center no-repeat;
+    background-size: 200px 250px;
+  }
+
+  #services .wrapper div span.audio {
+    width: 200px;
+    height: 250px;
+    display: block;
+    background: url(../images/services/audio-tablet.png) top center no-repeat;
+    background-size: 200px 250px;
+  }
+
+  /*----------------- Testimonials -------------*/
+  #testimonials .wrapper blockquote {
+    width: 30%;
+    height: auto;
+    display: inline-block;
+    margin: 0;
+    padding: 5px 0;
+  }
+  #testimonials .wrapper blockquote p cite {
+    font-size: 0.8rem;
+  }
+  #testimonials .wrapper blockquote .bubble {
+    width: 80%;
+    padding: 20px 15px;
+  }
+
+  /*----------------- Services -------------*/
+  #services .wrapper {
+    margin-top: 60px;
+  }
+
+  /*----------------- Contact -------------*/
+  #contact .wrapper {
+    margin-top: 50px;
+  }
+}
+/*----------------------- @Mobile -----------------------------*/
+@media all and (min-width: 0px) and (max-width: 600px) {
+  .mobile {
+    display: block;
+  }
+
+  #main-menu {
+    display: none;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  section {
+    padding: 0;
+  }
+
+  section article.wrapper {
+    margin-top: 0;
+  }
+
+  /*----------------- About -------------*/
+  #about {
+    margin: 0;
+    height: auto;
+    overflow: visible;
+  }
+  #about .btn-1 {
+    display: none;
+  }
+  #about h2 {
+    font-size: 1.3rem;
+    padding: 0.5rem 0;
+    line-height: 1;
+  }
+  #about img.banner {
+    float: left;
+    padding-left: 5px;
+    margin-top: -90px;
+    width: 150px;
+  }
+  #about div,
+  #about aside {
+    padding: 0;
+    margin: 0;
+  }
+  #about div {
+    width: 30%;
+    display: inline-block;
+    height: 70px;
+  }
+  #about aside {
+    width: 100%;
+    padding-top: 0;
+  }
+  #about aside h2 {
+    width: 50%;
+    float: right;
+    padding-bottom: 50px;
+  }
+  #about aside p {
+    float: left;
+    width: 90%;
+    padding: 0 20px;
+  }
+
+  #the-team {
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  #the-team .wrapper {
+    margin-top: 2px;
+  }
+  #the-team .wrapper .team {
+    width: 100%;
+    height: auto;
+    margin: 0 10px 20px 10px;
+    padding-bottom: 10px;
+    padding: 0;
+    text-align: left;
+    border-bottom: 1px solid rgba(30, 25, 20, 0.1);
+  }
+  #the-team .wrapper .team p:last-child {
+    padding-bottom: 20px;
+  }
+  #the-team .wrapper .team p {
+    width: 61%;
+    float: right;
+    padding: 0 15px 0 10px;
+    margin: 0;
+    margin-left: 5px;
+  }
+  #the-team .wrapper .team h3 {
+    width: 61%;
+    float: right;
+    height: auto;
+    font-size: 1.6rem;
+    padding: 0 0 5px 0;
+  }
+
+  #the-team .wrapper span {
+    width: auto;
+    height: auto;
+  }
+
+  #jackie-simpson {
+    background: url(../images/team/jackie-simpson-mobile.jpg) top left/120px 150px no-repeat;
+  }
+
+  #phil-knight {
+    background: url(../images/team/phil-knight-mobile.jpg) top left/120px 150px no-repeat;
+  }
+
+  #mike-todd {
+    background: url(../images/team/mike-todd-mobile.jpg) top left/120px 150px no-repeat;
+  }
+
+  #aaron-callen {
+    background: url(../images/team/aaron-callen-mobile.jpg) top left/120px 150px no-repeat;
+  }
+
+  #jason-grange {
+    background: url(../images/team/jason-grange-mobile.jpg) top left/120px 150px no-repeat;
+  }
+
+  #gregg-arch {
+    background: url(../images/team/gregg-arch-mobile.jpg) top left/120px 150px no-repeat;
+  }
+
+  #al-williams {
+    background: url(../images/team/al-williams-mobile.jpg) top left/120px 150px no-repeat;
+  }
+
+  #scott-pritchard {
+    background: url(../images/team/scott-pritchard-mobile.jpg) top left/120px 150px no-repeat;
+  }
+
+  #chris-stevens {
+    background: url(../images/team/chris-stevens-mobile.jpg) top left/120px 150px no-repeat;
+  }
+
+  /*----------------- Services -------------*/
+  #services {
+    margin: 0 auto 20px auto;
+    padding: 0;
+  }
+  #services .wrapper h2 {
+    font-size: 2.2rem;
+    padding: 0.5rem 0;
+    line-height: 1;
+  }
+  #services .wrapper div h3 {
+    font-weight: 400;
+    padding: 5px auto;
+    margin: 0 auto;
+  }
+  #services .wrapper div {
+    height: auto;
+  }
+  #services .wrapper div span {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    height: 100px;
+  }
+  #services .wrapper article {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #services .wrapper div, #services .wrapper div p {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #services .wrapper div p {
+    font-size: 1.2rem;
+  }
+  #services .services-wrapper {
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    margin-left: 5%;
+    text-align: left;
+  }
+  #services .repairs {
+    background: url(../images/services/repairs-mobile.png) top center/130px 100px no-repeat;
+  }
+  #services .certification {
+    background: url(../images/services/certification-mobile.png) top center/130px 100px no-repeat;
+  }
+  #services .electrical {
+    background: url(../images/services/electrical-mobile.png) top center/130px 100px no-repeat;
+  }
+  #services .audio {
+    background: url(../images/services/audio-mobile.png) top center/130px 100px no-repeat;
+  }
+
+  #services div ul {
+    list-style: none;
+    width: 80%;
+    padding: 5px 20px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #services div ul li {
+    padding: 5px;
+    margin: 5px auto;
+    font-size: 1rem;
+    background: #3f1224;
+    color: #c6d2d6;
+  }
+
+  /*----------------- Testimonials -------------*/
+  #testimonials .wrapper blockquote {
+    width: 40%;
+    height: auto;
+    display: inline-block;
+    margin: 0;
+    padding: 5px 0;
+  }
+  #testimonials .wrapper blockquote p cite {
+    font-size: 0.9rem;
+  }
+  #testimonials .wrapper blockquote .bubble {
+    width: 80%;
+    padding: 20px 15px;
+  }
+
+  #brands {
+    height: auto;
+  }
+  #brands .wrapper .edmunds-brands .brands-covered p {
+    width: 80%;
+    padding: 5px;
+    margin: 5px auto;
+    font-size: 1rem;
+    background: #3f1224;
+    color: #c6d2d6;
+  }
+
+  /*----------------- Contact -------------*/
+  #contact .wrapper {
+    margin-top: 50px;
+  }
+  #contact .twitter-feed, #contact aside {
+    width: 90%;
+    display: block;
+    text-align: center;
+    margin: 0 auto 30px auto;
+  }
+
+  #hours, #first-time {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #first-time {
+    margin: 5px auto;
+  }
+
+  #twitter-feed {
+    width: 90%;
+    text-align: center;
+  }
+
+  iframe#twitter-widget-0 {
+    width: 100% !important;
+    height: 430px;
+  }
+
+  aside#estimate {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.buttons {
+  display: table;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.container {
+  display: table-cell;
+  padding: 1em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+p a:hover {
+  background: white;
+  color: #E1332D;
+}
+
+.btn {
+  color: #3f1224;
+  cursor: pointer;
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  margin: 10px 15px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: top;
+  text-align: center;
+}
+
+.btn-1 {
+  font-weight: 100;
+  background: none;
+  width: 250px;
+  padding: 10px;
+}
+
+.btn-1 svg {
+  height: 45px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.btn-1 rect {
+  fill: none;
+  width: 100%;
+  stroke: #576f7c;
+  stroke-width: 1;
+  stroke-dasharray: 422, 0;
+}
+
+.btn-1:hover {
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.btn-1:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}

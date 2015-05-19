@@ -6,9 +6,10 @@ html, body 	{
 /******************* @Web******************/
 #web {
 	position: absolute;
-	top: 2500px;	
-	right: 3em;
-	width: 45%;
+	top: 2700px;	
+	right: 0;
+	padding: 0;
+	width: 62%;
 	height: auto;
 	float: right;
 	text-align: justify;	
@@ -23,48 +24,68 @@ html, body 	{
 			top: 1500px;			
 			width: 100%;			
 			right: 0;
-			padding: 0 1em;
+			padding: 10px 0;
 		}		
 }	
 #web h1 {
 	text-align: right;
 	margin: 0;
-	padding: 0;	
+	padding: 0 20px;	
 	padding-top: 0.3em;
 		@include breakpoint(mobile) {
 			padding-top: 0;
 		}
 		@include breakpoint(tablet) {
-			padding-top: 0;
+			padding: 10px;
+		}		
+		@include breakpoint(large) {
+			padding: 0 50px;
 		}		
 }
 #web h2 {
 	text-align: right;
 	margin: 0;
-	padding: 0;	
+	padding: 10px 20px;	
 	padding-top: 1em;
 		@include breakpoint(mobile) {
 			margin-top: 160px;
 		}
 		@include breakpoint(tablet) {
-			padding-top: 0;
+			padding: 10px;
 		}
-}	
+		@include breakpoint(large) {
+			padding: 50px 50px 0 0;
+		}		
+}
 #web p {
-	padding: 0.5em 0;
+	padding: 10px;
 		@include breakpoint(tablet) {
 			font-size: 0.9em;
 			background: $white-transparent;
 		}	
-
+		@include breakpoint(large) {
+			padding: 10px 50px;
+		}		
 }
-#web h2:nth-child(5) {
-	padding-top: 180px;
+#web h2:nth-child(3) {
+	padding-top: 0;
 		@include breakpoint(mobile) {
 			padding-top: 0;	
 		}
 		@include breakpoint(tablet) {
-			padding-top: 350px;			
+			padding-top: 200px;			
+		}
+		@include breakpoint(large) {
+			padding-top: 0;			
+		}	
+}		
+#web h2:nth-child(5) {
+	padding-top: 140px;
+		@include breakpoint(mobile) {
+			padding-top: 0;	
+		}
+		@include breakpoint(tablet) {
+			padding-top: 0;			
 		}	
 		@include breakpoint(large) {
 			padding-top: 0;			
@@ -74,7 +95,7 @@ html, body 	{
 /************************** @websites ***************************/
 #websites {
   position: absolute;
-  top: 3200px;
+  top: 3300px;
   height: auto;
   width: 100%;
   display: inline;
@@ -114,7 +135,7 @@ html, body 	{
   border: 1px solid $pewter;  
   width: 250px;
   height: 163px;
-  margin: 0.5em 0;
+  margin: 0.5em 10px;
   overflow: hidden;
   position: relative;
   display: inline-block;
@@ -156,6 +177,15 @@ html, body 	{
         } 
 }
 .weblinks:nth-child(4) {
+    background: url(../img/websites/curious-contrivances.jpg) top left no-repeat;
+    @include breakpoint(mobile) {
+        background: url(../img/websites/curious-contrivances[medium].jpg) top left no-repeat;
+    }
+    @include breakpoint(tablet) {
+        background: url(../img/websites/curious-contrivances[medium].jpg) top left no-repeat;
+    }     
+}
+.weblinks:nth-child(5) {
   background: url(../img/websites/artcoalesce.jpg) top left no-repeat;
          @include breakpoint(mobile) {
            background: url(../img/websites/artcoalesce[medium].jpg) top left no-repeat;
@@ -164,122 +194,231 @@ html, body 	{
            background: url(../img/websites/artcoalesce[medium].jpg) top left no-repeat;
         }     
 }
-.weblinks:nth-child(5) {
-  background: url(../img/websites/upmc.jpg) top left no-repeat;
-        @include breakpoint(mobile) {
-           background: url(../img/websites/upmc[medium].jpg) top left no-repeat;
-        }
-        @include breakpoint(tablet) {
-           background: url(../img/websites/upmc[medium].jpg) top left no-repeat;
-        }       
-}
 .weblinks:nth-child(6) {
-  background: url(../img/websites/koto.jpg) top left no-repeat;
-        @include breakpoint(mobile) {
-           background: url(../img/websites/koto[medium].jpg) top left no-repeat;
-        }
-        @include breakpoint(tablet) {
-           background: url(../img/websites/koto[medium].jpg) top left no-repeat;
-        }   
+    background: url(../img/websites/schlepped.jpg) top left no-repeat;
+    @include breakpoint(mobile) {
+        background: url(../img/websites/schlepped[medium].jpg) top left no-repeat;
+    }
+    @include breakpoint(tablet) {
+        background: url(../img/websites/schlepped[medium].jpg) top left no-repeat;
+    }   
 }
 .weblinks:nth-child(7) {
-  background: url(../img/websites/fcb.jpg) top left no-repeat;
-        @include breakpoint(mobile) {
-           background: url(../img/websites/fcb[medium].jpg) top left no-repeat;
-        }
-        @include breakpoint(tablet) {
-           background: url(../img/websites/fcb[medium].jpg) top left no-repeat;
-        }   
+    background: url(../img/websites/blemf.jpg) top left no-repeat;
+    @include breakpoint(mobile) {
+        background: url(../img/websites/blemf[medium].jpg) top left no-repeat;
+    }
+    @include breakpoint(tablet) {
+        background: url(../img/websites/blemf[medium].jpg) top left no-repeat;
+    }   
 }
 .weblinks:nth-child(8) {
-  background: url(../img/websites/ahn.jpg) top left no-repeat;
-        @include breakpoint(mobile) {
-           background: url(../img/websites/ahn[medium].jpg) top left no-repeat;
-        }
-        @include breakpoint(tablet) {
-           background: url(../img/websites/ahn[medium].jpg) top left no-repeat;
-        }   
+    background: url(../img/websites/scholar.jpg) top left no-repeat;
+    @include breakpoint(mobile) {
+        background: url(../img/websites/scholar[medium].jpg) top left no-repeat;
+    }
+    @include breakpoint(tablet) {
+        background: url(../img/websites/scholar[medium].jpg) top left no-repeat;
+    }   
 }
 .weblinks:nth-child(9) {
-  background: url(../img/websites/highmark.jpg) top left no-repeat;
-        @include breakpoint(mobile) {
-           background: url(../img/websites/highmark[medium].jpg) top left no-repeat;
-        }
-        @include breakpoint(tablet) {
-           background: url(../img/websites/highmark[medium].jpg) top left no-repeat;
-        }   
+    background: url(../img/websites/fdibs.jpg) top left no-repeat;
+    @include breakpoint(mobile) {
+        background: url(../img/websites/fdibs[medium].jpg) top left no-repeat;
+    }
+    @include breakpoint(tablet) {
+        background: url(../img/websites/fdibs[medium].jpg) top left no-repeat;
+    }   
 }
+
 .weblinks:nth-child(10) {
-  background: url(../img/websites/fdibs.jpg) top left no-repeat;
-        @include breakpoint(mobile) {
-           background: url(../img/websites/fdibs[medium].jpg) top left no-repeat;
-        }
-        @include breakpoint(tablet) {
-           background: url(../img/websites/fdibs[medium].jpg) top left no-repeat;
-        }   
+    background: url(../img/websites/robbiebyron.jpg) top left no-repeat;
+    @include breakpoint(mobile) {
+        background: url(../img/websites/robbiebyron[medium].jpg) top left no-repeat;
+    }
+    @include breakpoint(tablet) {
+        background: url(../img/websites/robbiebyron[medium].jpg) top left no-repeat;
+    }   
 }
 .weblinks:nth-child(11) {
-  background: url(../img/websites/blemf.jpg) top left no-repeat;
-        @include breakpoint(mobile) {
-           background: url(../img/websites/blemf[medium].jpg) top left no-repeat;
-        }
-        @include breakpoint(tablet) {
-           background: url(../img/websites/blemf[medium].jpg) top left no-repeat;
-        }   
+    background: url(../img/websites/aarons.jpg) top left no-repeat;
+    @include breakpoint(mobile) {
+        background: url(../img/websites/aarons[medium].jpg) top left no-repeat;
+    }
+    @include breakpoint(tablet) {
+        background: url(../img/websites/aarons[medium].jpg) top left no-repeat;
+    }   
 }
 .weblinks:nth-child(12) {
-  background: url(../img/websites/robbiebyron.jpg) top left no-repeat;
-        @include breakpoint(mobile) {
-           background: url(../img/websites/robbiebyron[medium].jpg) top left no-repeat;
-        }
-        @include breakpoint(tablet) {
-           background: url(../img/websites/robbiebyron[medium].jpg) top left no-repeat;
-        }   
+    background: url(../img/websites/koto.jpg) top left no-repeat;
+    @include breakpoint(mobile) {
+        background: url(../img/websites/koto[medium].jpg) top left no-repeat;
+    }
+    @include breakpoint(tablet) {
+        background: url(../img/websites/koto[medium].jpg) top left no-repeat;
+    }   
 }
 .weblinks:nth-child(13) {
-  background: url(../img/websites/women.jpg) top left no-repeat;
+    background: url(../img/websites/blueant.jpg) top left no-repeat;
         @include breakpoint(mobile) {
-           background: url(../img/websites/women[medium].jpg) top left no-repeat;
+            background: url(../img/websites/blueant[medium].jpg) top left no-repeat;
         }
         @include breakpoint(tablet) {
-           background: url(../img/websites/women[medium].jpg) top left no-repeat;
-        }   
-}
-.weblinks:nth-child(14) {
-  background: url(../img/websites/schlepped.jpg) top left no-repeat;
-        @include breakpoint(mobile) {
-           background: url(../img/websites/schlepped[medium].jpg) top left no-repeat;
-        }
-        @include breakpoint(tablet) {
-           background: url(../img/websites/schlepped[medium].jpg) top left no-repeat;
+            background: url(../img/websites/blueant[medium].jpg) top left no-repeat;
         }   
 }
 .weblinks:nth-child(15) {
-  background: url(../img/websites/schlepped.jpg) top left no-repeat;
-         @include breakpoint(mobile) {
-           background: url(../img/websites/schlepped[medium].jpg) top left no-repeat;
+    background: url(../img/websites/success-summit.jpg) top left no-repeat;
+        @include breakpoint(mobile) {
+            background: url(../img/websites/success-summit[medium].jpg) top left no-repeat;
         }
         @include breakpoint(tablet) {
-           background: url(../img/websites/schlepped[medium].jpg) top left no-repeat;
-        }        
-}
-.weblinks:nth-child(16) {
-  background: url(../img/websites/schlepped.jpg) top left no-repeat;
-         @include breakpoint(mobile) {
-           background: url(../img/websites/schlepped[medium].jpg) top left no-repeat;
-        }
-        @include breakpoint(tablet) {
-           background: url(../img/websites/schlepped[medium].jpg) top left no-repeat;
+            background: url(../img/websites/success-summit[medium].jpg) top left no-repeat;
         }   
 }
 .weblinks:nth-child(17) {
-  background: url(../img/websites/schlepped.jpg) top left no-repeat;
-         @include breakpoint(mobile) {
-           background: url(../img/websites/schlepped[medium].jpg) top left no-repeat;
+    background: url(../img/websites/women.jpg) top left no-repeat;
+        @include breakpoint(mobile) {
+            background: url(../img/websites/women[medium].jpg) top left no-repeat;
         }
         @include breakpoint(tablet) {
-           background: url(../img/websites/schlepped[medium].jpg) top left no-repeat;
-        }      
+            background: url(../img/websites/women[medium].jpg) top left no-repeat;
+        }   
+}
+.weblinks:nth-child(16) {
+  background: url(../img/websites/affordability.jpg) top left no-repeat;
+        @include breakpoint(mobile) {
+           background: url(../img/websites/affordability[medium].jpg) top left no-repeat;
+        }
+        @include breakpoint(tablet) {
+           background: url(../img/websites/affordability[medium].jpg) top left no-repeat;
+        }   
+}
+.weblinks:nth-child(18) {
+  background: url(../img/websites/tuition.jpg) top left no-repeat;
+        @include breakpoint(mobile) {
+            background: url(../img/websites/tuition[medium].jpg) top left no-repeat;
+        }
+        @include breakpoint(tablet) {
+           background: url(../img/websites/tuition[medium].jpg) top left no-repeat;
+        }   
+}
+.weblinks:nth-child(19) {
+    background: url(../img/websites/degrees.jpg) top left no-repeat;
+    @include breakpoint(mobile) {
+        background: url(../img/websites/degrees[medium].jpg) top left no-repeat;
+    }
+    @include breakpoint(tablet) {
+        background: url(../img/websites/degrees[medium].jpg) top left no-repeat;
+    }   
+}
+.weblinks:nth-child(20) {
+    background: url(../img/websites/success.jpg) top left no-repeat;
+    @include breakpoint(mobile) {
+        background: url(../img/websites/success[medium].jpg) top left no-repeat;
+    }
+    @include breakpoint(tablet) {
+        background: url(../img/websites/success[medium].jpg) top left no-repeat;
+    }   
+}
+.weblinks:nth-child(21) {
+    background: url(../img/websites/program.jpg) top left no-repeat;
+    @include breakpoint(mobile) {
+        background: url(../img/websites/program[medium].jpg) top left no-repeat;
+    }
+    @include breakpoint(tablet) {
+        background: url(../img/websites/program[medium].jpg) top left no-repeat;
+    }   
+}
+.weblinks:nth-child(0) {
+    background: url(../img/websites/fcb.jpg) top left no-repeat;
+    @include breakpoint(mobile) {
+        background: url(../img/websites/fcb[medium].jpg) top left no-repeat;
+    }
+    @include breakpoint(tablet) {
+        background: url(../img/websites/fcb[medium].jpg) top left no-repeat;
+    }   
+}
+.weblinks:nth-child(23) {
+    background: url(../img/websites/sommeliere.jpg) top left no-repeat;
+    @include breakpoint(mobile) {
+        background: url(../img/websites/sommeliere[medium].jpg) top left no-repeat;
+    }
+    @include breakpoint(tablet) {
+        background: url(../img/websites/sommeliere[medium].jpg) top left no-repeat;
+    }   
+}
+.weblinks:nth-child(24) {
+    background: url(../img/websites/squishthefish.jpg) top left no-repeat;
+    @include breakpoint(mobile) {
+        background: url(../img/websites/squishthefish[medium].jpg) top left no-repeat;
+    }
+    @include breakpoint(tablet) {
+        background: url(../img/websites/squishthefish[medium].jpg) top left no-repeat;
+    }   
+}
+.weblinks:nth-child(25) {
+    background: url(../img/websites/coming.jpg) top left no-repeat;
+    @include breakpoint(mobile) {
+        background: url(../img/websites/coming[medium].jpg) top left no-repeat;
+    }
+    @include breakpoint(tablet) {
+        background: url(../img/websites/coming[medium].jpg) top left no-repeat;
+    }   
+}
+.weblinks:nth-child(26) {
+    background: url(../img/websites/coming.jpg) top left no-repeat;
+    @include breakpoint(mobile) {
+        background: url(../img/websites/coming[medium].jpg) top left no-repeat;
+    }
+    @include breakpoint(tablet) {
+        background: url(../img/websites/coming[medium].jpg) top left no-repeat;
+    }   
+}
+.weblinks:nth-child(28) {
+    background: url(../img/websites/strayer.jpg) top left no-repeat;
+    @include breakpoint(mobile) {
+        background: url(../img/websites/strayer[medium].jpg) top left no-repeat;
+    }
+    @include breakpoint(tablet) {
+        background: url(../img/websites/strayer[medium].jpg) top left no-repeat;
+    }   
+}
+.weblinks:nth-child(31) {
+    background: url(../img/websites/highmark.jpg) top left no-repeat;
+    @include breakpoint(mobile) {
+        background: url(../img/websites/highmark[medium].jpg) top left no-repeat;
+    }
+    @include breakpoint(tablet) {
+        background: url(../img/websites/highmark[medium].jpg) top left no-repeat;
+    }   
+}
+.weblinks:nth-child(29) {
+    background: url(../img/websites/fcb.jpg) top left no-repeat;
+    @include breakpoint(mobile) {
+        background: url(../img/websites/fcb[medium].jpg) top left no-repeat;
+    }
+    @include breakpoint(tablet) {
+        background: url(../img/websites/fcb[medium].jpg) top left no-repeat;
+    }   
+}
+.weblinks:nth-child(30) {
+    background: url(../img/websites/ahn.jpg) top left no-repeat;
+    @include breakpoint(mobile) {
+        background: url(../img/websites/ahn[medium].jpg) top left no-repeat;
+    }
+    @include breakpoint(tablet) {
+        background: url(../img/websites/ahn[medium].jpg) top left no-repeat;
+    }   
+}
+.weblinks:nth-child(0) {
+    background: url(../img/websites/fcb.jpg) top left no-repeat;
+    @include breakpoint(mobile) {
+        background: url(../img/websites/fcb[medium].jpg) top left no-repeat;
+    }
+    @include breakpoint(tablet) {
+        background: url(../img/websites/fcb[medium].jpg) top left no-repeat;
+    }   
 }
 .weblinks .overlay {
   margin: 1em;
@@ -350,7 +489,7 @@ html, body 	{
 /***************************** @ads **************************/
 #ads {
 	position: absolute;
-	top: 5400px;
+	top: 7000px;
 	width: 90%;
 	float: left;
 	left: 0.2em;
@@ -362,7 +501,7 @@ html, body 	{
 	display: inline;
 	z-index: 0;
 		@include breakpoint(mobile) {
-			top: 7500px;
+			top: 9800px;
 			margin: 1em auto;
 			right: 0;
 			left: 0;
@@ -371,7 +510,7 @@ html, body 	{
 			padding:  0.4em;
 		}
 		@include breakpoint(tablet) {
-			top: 3900px;
+			top: 6900px;
 			right: 5%;
 			left: 5%;
 			width: 90%;
@@ -485,19 +624,18 @@ filter: blur(2px);
 
 /******************* @Mobile******************/
 #mobile {
-	top: 4400px;
-	width: 100%;
-	float: left;
-	left: 0;
-	padding: 1em 0;
-	padding-left: 5em;
+	top: 5200px;
+	width: 80%;
 	position: absolute;
+	float: left;
+	left: 10%;
+	padding: 1em 0;
 	text-align: left;
 	height: auto;
 	display: inline;
 	z-index: 0;
 		@include breakpoint(mobile) {
-			top: 4400px;
+			top: 5200px;
 			margin: 0.3em auto;
 			right: 0;
 			left: 0;
@@ -505,22 +643,25 @@ filter: blur(2px);
 			padding: 1em;
 		}
 		@include breakpoint(tablet) {
-			top: 6300px;
+			top: 7200px;
 			right: 0;
 			left: 0;
 			width: 100%;
 			padding: 1em 3em;	
 		}
 		@include breakpoint(large) {
-			// width: 100%;
-			// padding: 1em;
-			// margin:  2em 5em;
+			padding: 1em;
+			margin:  10px;
+
 		}	
 }
 #mobile h1 {
 	text-align: left;
+	width: 80%;
+	margin: 0 auto;
+	left: 10%;
 	padding: 0;
-	padding-left: 1em;
+	padding-top: 100px;
 		@include breakpoint(mobile) {
 			width: 100%;
 			margin: 2px auto;
@@ -532,12 +673,15 @@ filter: blur(2px);
 			padding: 0.5em;
 			font-size: 1.5em;
 		}
+	@include breakpoint(large) {
+			width: 60%;
+			left: 20%;
+	}			
 }
 #mobile p {
 	width: 80%;
 	margin: 0 auto;
-	margin-bottom: 0.1em;
-	margin-left: 0;
+	left: 10%;
 	@include breakpoint(mobile) {
 			width: 95%;
 			padding: 0.2em auto;
@@ -549,9 +693,8 @@ filter: blur(2px);
 			margin:  0 auto;
 	}			
 	@include breakpoint(large) {
-			width: 80%;
-			padding:1em;
-			margin-left: 6em;
+			width: 60%;
+			left: 20%;
 	}	
 }
 #mobile a {
@@ -568,7 +711,7 @@ filter: blur(2px);
 	text-align:center;
 	left: 0;
 	right: 0;
-	padding-top: 1em;
+	padding-top: 250px;
 	z-index: 9999;
 }
 .flip-container {
@@ -616,7 +759,7 @@ filter: blur(2px);
 .back ul {
 	position: absolute;
 	top: 190px;
-	left: 0.2em;
+	left: 0;
 	padding: 0;
 	margin: 0;
 	text-align: left;
@@ -665,22 +808,22 @@ filter: blur(2px);
 			background: url(../img/mobile/scholarhero[medium].png) 0 0 no-repeat;
 	}			
 }
-#img-go {
-	background: url(../img/mobile/go[large].png) 0 0 no-repeat;
+#img-strayer1 {
+	background: url(../img/mobile/strayer1[large].png) 0 0 no-repeat;
 	@include breakpoint(tablet) {
-			background: url(../img/mobile/go[medium].png) 0 0 no-repeat;
+			background: url(../img/mobile/strayer1[medium].png) 0 0 no-repeat;
 	}			
 }
-#img-ipaint {
-	background: url(../img/mobile/ipaint[large].png) 0 0 no-repeat;
+#img-upmc {
+	background: url(../img/mobile/upmc[large].png) 0 0 no-repeat;
 	@include breakpoint(tablet) {
-			background: url(../img/mobile/ipaint[medium].png) 0 0 no-repeat;
+			background: url(../img/mobile/upmc[medium].png) 0 0 no-repeat;
 	}			
 }
-#img-pearloak {
-	background: url(../img/mobile/pearloak[large].png) 0 0 no-repeat;
+#img-strayer2 {
+	background: url(../img/mobile/strayer2[large].png) 0 0 no-repeat;
 	@include breakpoint(tablet) {
-			background: url(../img/mobile/pearloak[medium].png) 0 0 no-repeat;
+			background: url(../img/mobile/strayer2[medium].png) 0 0 no-repeat;
 	}			
 }
 #img-scriber {
@@ -692,14 +835,14 @@ filter: blur(2px);
 #icon-scholarhero {
 background: url(../img/mobile/scholarhero-icon[large].png) 0 0 no-repeat;
 }
-#icon-go {
-background: url(../img/mobile/go-icon[large].png) 0 0 no-repeat;
+#icon-strayer1 {
+background: url(../img/mobile/strayer1-icon[large].png) 0 0 no-repeat;
 }
-#icon-ipaint {
-background: url(../img/mobile/ipaint-icon[large].png) 0 0 no-repeat;
+#icon-upmc {
+background: url(../img/mobile/upmc-icon[large].png) 0 0 no-repeat;
 }
-#icon-pearloak {
-background: url(../img/mobile/pearloak-icon[large].png) 0 0 no-repeat;
+#icon-strayer2 {
+background: green url(../img/mobile/strayer1-icon[large].png) 0 0 no-repeat;
 }
 #icon-flipper {
 	background: url(../img/mobile/scholarhero-icon[large].png) 0 0 no-repeat;
@@ -726,34 +869,52 @@ background: url(../img/mobile/pearloak-icon[large].png) 0 0 no-repeat;
 	}	
 }
 #design .portfolio-nav {
-	margin-top: -50px;	
+	margin-top: -10px;	
 	@include breakpoint(mobile) {
 		margin-top: 310px;
 	}
 	@include breakpoint(tablet) {
-		margin-top: 210px;
+		margin-top: 90px;
 	}	
+}
+#design .first {
+	padding-top: 100px;
+	@include breakpoint(mobile) {
+		margin-top: 0;
+	}
+	@include breakpoint(tablet) {
+		padding-top: 200px;
+	}	
+	@include breakpoint(large) {
+		margin-top: 0;
+	}	
+}
+#design aside {
+	z-index: 10;
+	width: 40%;
+	@include breakpoint(mobile) {
+		padding-bottom: 200px; 
+	}
+	@include breakpoint(tablet) {
+		width: 90%;
+		padding-bottom: 10px; 
 
+	}	
+	@include breakpoint(large) {
+		width: 80%;
+		padding-bottom: 10px; 
+	}	
 }
 #design aside:nth-child(4) {
 	@include breakpoint(mobile) {
 		padding: 1em; 
 	}
-	@include breakpoint(tablet) {
-		padding-bottom: 390px;
-	}	
-}
-#design aside {
-	z-index: 10;
-	@include breakpoint(mobile) {
-		padding-bottom: 200px; 
-	}
-	@include breakpoint(tablet) {
-		padding-bottom: 100px; 
-	}	
+	// @include breakpoint(tablet) {
+	// 	padding-bottom: 390px;
+	// }	
 }
 #design p {
-		width: 40%;	
+		width: 90%;	
 		text-align: justify;
 		padding-left: 2em;
 		z-index: 10;
@@ -762,14 +923,14 @@ background: url(../img/mobile/pearloak-icon[large].png) 0 0 no-repeat;
 		padding: 1em; 
 	}
 	@include breakpoint(tablet) {
-		width: 90%;
+		width: 100%;
 		margin: 0 auto;
 		padding: 0;
 		left: 0;
 		right: 0;
 	}
 	@include breakpoint(large) {
-		width: 30%;
+		width: 45%;
 	}
 }
 #design h1 {
@@ -781,7 +942,7 @@ background: url(../img/mobile/pearloak-icon[large].png) 0 0 no-repeat;
 		padding-top: 2em; 
 	}
 	@include breakpoint(tablet) {
-		padding-top: 0.1em; 
+		padding-top: 20px; 
 	}		
 }
 #design h2 {
@@ -800,15 +961,17 @@ background: url(../img/mobile/pearloak-icon[large].png) 0 0 no-repeat;
 }
 #design h4 {
 	text-align: left;
-	width: 30%;
+	width: 40%;
+	padding: 0;
+	margin: 0.2em 50px;
 }
 
 /******************** @animation ****************/
 #animation {
 	position: absolute;
 	float: left;
-	top: 7300px;
-	width: 50%;
+	top: 7250px;
+	width: 100%;
 	left: 0;
 	right: 0;
 	height: auto;	
@@ -826,6 +989,11 @@ background: url(../img/mobile/pearloak-icon[large].png) 0 0 no-repeat;
 	}
 	@include breakpoint(tablet) {
 		top: 12300px;		
+		margin: 10px 5px;
+		padding: 0;
+	}
+	@include breakpoint(large) {
+		width: 100%;
 		margin: 2em;
 		padding: 0;
 	}
@@ -845,8 +1013,11 @@ background: url(../img/mobile/pearloak-icon[large].png) 0 0 no-repeat;
 	}
 	@include breakpoint(tablet) {	
 		margin: 0;
-		padding: 0.2em;
+		padding: 10px;
 		font-size: 2em;
+	}		
+	@include breakpoint(large) {	
+		padding-top: 50px;
 	}		
 }
 #animation h2 {
@@ -869,38 +1040,47 @@ background: url(../img/mobile/pearloak-icon[large].png) 0 0 no-repeat;
 #animation p {
 	display: block;
 	width: 100%;
+	padding: 10px 15%;
 	height: auto;
 	margin: 0 auto;
 	text-align: justify;
-	margin-bottom: 0.2em;
-		@include breakpoint(mobile) {
-			margin: 0 auto;
-			width: 96%;
-			text-align: justify;
-			
-		}
-		@include breakpoint(tablet) {
-			margin: 0;	
-			width: 90%;
-		}
-		@include breakpoint(large) {
-			margin: 0;	
-		}		
+	@include breakpoint(mobile) {
+		margin: 0 auto;
+		width: 96%;
+		text-align: justify;
+		
+	}
+	@include breakpoint(tablet) {
+		width: 100%;
+		padding: 5px 10px;
+		padding-right: 20px;
+		margin: 0 auto;	
+	}
+	@include breakpoint(large) {
+		width: 100%;
+		padding: 10px 28%;
+		margin: 0;	
+	}		
 }
 #animation p:nth-child(3) {
 	@include breakpoint(mobile) {
 			padding-bottom: 300px;
 		}			
 	@include breakpoint(tablet) {
-			padding-bottom: 300px;
+			padding-bottom: 20px;
 		}			
 }
-
+#animation .portfolio-nav {
+	padding-top: 200px;
+	@include breakpoint(tablet) {
+		padding-top: 0;
+	}
+}
 /******************** @me ****************/
 #me {
 	position: absolute;
-	top: 7900px;	
-  	width: 60%;
+	top: 8000px;	
+  	width: 70%;
 	height: auto;
 	left: 0;
 	right: 0;
@@ -996,20 +1176,25 @@ background: url(../img/mobile/pearloak-icon[large].png) 0 0 no-repeat;
 	}
 	@include breakpoint(tablet) {
 		top: 13800px;
-		width: 80%;		
+		width: 100%;		
 	}
 }
 #stats h1 {
-	margin: 20px 0;
+	width: 50%;
+	margin: 20px 25%;
 	padding: 0;
+	@include breakpoint(mobile) {
+
+	}
+	@include breakpoint(tablet) {
+		margin: 5px 0;		
+	}
 }
 #stats aside {	
-	width: 40%;
+	width: 80%;
 	height: auto;
 	padding: 10px;
 	margin:  0 auto;
-	// left: 0;
-	// right: 0;
 	text-align: center;
 	@include breakpoint(mobile) {
 		position: relative;			
@@ -1018,11 +1203,12 @@ background: url(../img/mobile/pearloak-icon[large].png) 0 0 no-repeat;
 		text-align: justify;		
 	}
 	@include breakpoint(tablet) {
-		width: 90%;		
-		padding: 0.1em;
+		width: 100%;		
+		padding: 5px auto;
 		text-align: justify;		
 	}	
 	@include breakpoint(large) {
+			width: 60%;
 		padding: 0 2em;	
 	}	
 }
@@ -1037,7 +1223,13 @@ background: url(../img/mobile/pearloak-icon[large].png) 0 0 no-repeat;
 		font-size: 0.7em;
 	}		
 	@include breakpoint(tablet) {
-		padding: 1em;
+		padding: 10px;
+		&:nth-child(4) {
+			padding-top: 0;
+		}		
+		&:nth-child(3) {
+			padding-top: 200px;
+		}		
 	}
 	@include breakpoint(large) {
 		width: 100%;		
@@ -1063,7 +1255,7 @@ background: url(../img/mobile/pearloak-icon[large].png) 0 0 no-repeat;
 	position: absolute;
 	float: left;
 	top: 1900px;
-	width: 50%;
+	width: 70%;
 	left: 0;
 	right: 0;
 	height: auto;	
@@ -1080,25 +1272,45 @@ background: url(../img/mobile/pearloak-icon[large].png) 0 0 no-repeat;
 		padding: 1em 0.2em;
 	}
 	@include breakpoint(tablet) {
-		top: 12300px;		
-		margin: 2em;
-		padding: 0;
+		top: 6100px;
+		width: 100%;		
+		margin: 2em auto;
+		padding: 20px;
+	}
+	@include breakpoint(large) {
+		width: 90%;		
 	}
 }
 #process blockquote {
+	// width: 90%;
 	font-style: italic;
-	padding-bottom: 10px;
+	padding: 30px;
 }
 #process h2 {
 	margin: 10px 0;
 	padding: 0;
+	&:nth-child(4) {
+		padding-top: 200px;
+			@include breakpoint(mobile) {
+			padding: 0;
+			}
+			@include breakpoint(tablet) {
+				padding: 0;
+			}
+			@include breakpoint(large) {
+				padding: 0;		
+			}
+	}
+
 }
 #process p {
 	margin: 0;
 	padding: 0;		
 }
 #process .portfolio-nav {
-	padding-top: 200px;
+	@include breakpoint(large) {
+		padding-top: 200px;	
+	}
 }
 /* =========================== @experience ============================ */
 #experience  {
@@ -1117,7 +1329,7 @@ background: url(../img/mobile/pearloak-icon[large].png) 0 0 no-repeat;
 	}
 	@include breakpoint(tablet) {
 		top: 3900px;
-		display: block;
+		// display: block;
 	}	
 	@include breakpoint(large) {
 		top: 2950px;
@@ -1127,7 +1339,8 @@ background: url(../img/mobile/pearloak-icon[large].png) 0 0 no-repeat;
 #experience p, #experience li {
 	background: none;	
 	@include breakpoint(tablet) {
-		font-size: 1.3em;
+		font-size: 0.8em;
+		width: 100%;
 	}				
 }
 #experience a {
@@ -1170,6 +1383,50 @@ background: url(../img/mobile/pearloak-icon[large].png) 0 0 no-repeat;
 }
 #experience aside:nth-child(4) {
 	background: $coral;		
+}
+
+#experience .fourths {
+	width: 25%;
+	float: left;
+	height: auto;
+	margin: 1em auto;
+	padding: 0.5em;	
+	text-align: center;
+	left: 0;
+	right: 0;
+	display: inline-block;
+	@include breakpoint(mobile) {
+		width: 100%; 
+		border-bottom: 1px solid $neoBlack;
+	}
+	@include breakpoint(tablet) {
+		width: 100%;
+		padding: 10px 0;
+		margin: 10px;
+		text-align: left;
+		border-bottom: 1px solid $neoBlack;
+	}
+}
+#experience .fourths h4, #experience .fourths h5, #experience .fourths ul {
+	text-align: center;
+	padding: 0.4em;
+	@include breakpoint(tablet) {
+		padding: 0;
+		padding-left: 30px;
+		margin-left: 30px;
+		text-align: left;
+
+	}
+}
+.fourths li {
+	text-align: center;
+	padding: 0.1em;
+	@include breakpoint(tablet) {
+		padding: 0;
+		margin-left: 30px;		
+		text-align: left;
+
+	}
 }
 
 /* =========================== @contact ============================ */

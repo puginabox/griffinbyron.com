@@ -68,8 +68,8 @@
 	width: 459px;
 	height: 406px;
 	background: url("../img/parallax/pearl-oak-iPhone-3views.png") no-repeat;
-	top: 1420px;
-	left: 11em;
+	top: 1480px;
+	left: 3em;
 	z-index: 1;	
 		@include breakpoint(mobile) {
 			width: 300px;
@@ -96,7 +96,7 @@
 	width: 300px;
 	height: 227px;
 	background: url("../img/parallax/pearl-oak-laptop.jpg") no-repeat;
-	top: 1120px;
+	top: 1380px;
 	left: 45em;
 	z-index: 0;
 		@include breakpoint(mobile) {
@@ -178,8 +178,8 @@
 	width: 600px;
 	height: 352px;
 	background: url("../img/parallax/dont-click-this-button.jpg") no-repeat;
-	top: 2780px;
-	left: 34em;
+	top: 2860px;
+	left: 30em;
 	z-index: 0;
 		@include breakpoint(mobile) {
 			width: 300px;
@@ -191,13 +191,14 @@
 		@include breakpoint(tablet) {
 			width: 500px;
 			height: 293px;
-			top: 2200px;
+			top: 3650px;
 			left: 0;
+			z-index: 2;
 			background: url("../img/parallax/dont-click-this-button[medium].jpg") no-repeat;			
 		}	
 		@include breakpoint(large) {
-			top: 2780px;
-			left: 34em;				
+			top: 2880px;
+			left: 48em;				
 		}		
 }
 
@@ -219,8 +220,8 @@
 		@include breakpoint(tablet) {
 			width: 600px;
 			height: 601px;
-			top: 3820px;
-			left: 1em;
+			top: 4290px;
+			left: 11em;
 			background: url("../img/parallax/process-img2[medium].jpg") no-repeat;
 
 		}
@@ -232,52 +233,52 @@
 }
 
 
-#me-img1 {
-	position: absolute;
-	width: 549px;
-	height: 347px;
-	background: url("../img/parallax/me-img1.jpg") no-repeat;
-	// top: 4850px;
-	top: 80px;	
-	left: 0;
-		@include breakpoint(mobile) {
-			width: 500px;
-			height: 316px;
-			top: 5800px;
-			left: 0;
-			background: url("../img/parallax/me-img1[medium].jpg") no-repeat;
-		}
-		@include breakpoint(tablet) {
-			width: 500px;
-			height: 316px;
-			top: 6200px;
-			left: 2em;
-			background: url("../img/parallax/me-img1[medium].jpg") no-repeat;
+// #me-img1 {
+// 	position: absolute;
+// 	width: 549px;
+// 	height: 347px;
+// 	background: url("../img/parallax/me-img1.jpg") no-repeat;
+// 	top: 4850px;
+// 	top: 80px;	
+// 	left: 0;
+// 		@include breakpoint(mobile) {
+// 			width: 500px;
+// 			height: 316px;
+// 			top: 5800px;
+// 			left: 0;
+// 			background: url("../img/parallax/me-img1[medium].jpg") no-repeat;
+// 		}
+// 		@include breakpoint(tablet) {
+// 			width: 500px;
+// 			height: 316px;
+// 			top: 6200px;
+// 			left: 2em;
+// 			background: url("../img/parallax/me-img1[medium].jpg") no-repeat;
 
-		}
-}
-#me-img2 {
-	position: absolute;
-	width: 400px;
-	height: 280px;
-	background: url("../img/parallax/me-img2.jpg") no-repeat;
-	top: 4480px;
-	top: 80px;	
-	left: 43em;
-		@include breakpoint(mobile) {
-			width: 320px;
-			height: 224px;
-			top: 4140px;
-			margin: 0 auto;
-			left: 0.4em;
-			background: url("../img/parallax/me-img2[small].jpg") no-repeat;
-		}
-		@include breakpoint(tablet) {
-			width: 200px;
-			height: 240px;
-			top: 1270px;
-			left: 0;
-			background: url("../img/parallax/me-img2[small].jpg") no-repeat;
+// 		}
+// }
+// #me-img2 {
+// 	position: absolute;
+// 	width: 400px;
+// 	height: 280px;
+// 	background: url("../img/parallax/me-img2.jpg") no-repeat;
+// 	top: 4480px;
+// 	top: 80px;	
+// 	left: 43em;
+// 		@include breakpoint(mobile) {
+// 			width: 320px;
+// 			height: 224px;
+// 			top: 4140px;
+// 			margin: 0 auto;
+// 			left: 0.4em;
+// 			background: url("../img/parallax/me-img2[small].jpg") no-repeat;
+// 		}
+// 		@include breakpoint(tablet) {
+// 			width: 200px;
+// 			height: 240px;
+// 			top: 1270px;
+// 			left: 0;
+// 			background: url("../img/parallax/me-img2[small].jpg") no-repeat;
 
-		}
-}
+// 		}
+// }

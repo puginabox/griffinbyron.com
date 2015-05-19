@@ -1,0 +1,28 @@
+
+.fourths {
+	width: 25%;
+	float: left;
+	height: auto;
+	margin: 1em auto;
+	padding: 0.5em;	
+	text-align: center;
+	left: 0;
+	right: 0;
+	display: inline-block;
+	@include breakpoint(mobile) {
+		width: 100%; 
+		border-bottom: 1px solid $neoBlack;
+	}
+	@include breakpoint(tablet) {
+		width: 100%;
+		border-bottom: 1px solid $neoBlack;
+	}
+}
+.fourths h4, .fourths h5, .fourths ul {
+	text-align: center;
+	padding: 0.4em;
+}
+.fourths li {
+	text-align: center;
+	padding: 0.1em;
+}
