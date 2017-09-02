@@ -1,0 +1,118 @@
+/* line 1, ../sass/styles-websites.scss */
+#websites {
+  display: inline;
+}
+
+/* line 12, ../sass/styles-websites.scss */
+.weblinks {
+  background: orange;
+  width: 50px;
+  height: 50px;
+  margin: 20px auto;
+  border: 1px solid white;
+  border-radius: 100%;
+  padding: 1em;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+}
+
+/* line 24, ../sass/styles-websites.scss */
+.weblinks .overlay {
+  margin: 1em;
+  border: 0 solid white;
+  border-radius: 100%;
+  bottom: 0;
+  height: 0;
+  opacity: .95;
+  position: absolute;
+  right: 0;
+  text-indent: -9999px;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  width: 0;
+}
+
+/* line 38, ../sass/styles-websites.scss */
+.weblinks:hover .overlay {
+  border: 50px solid white;
+  margin: 0;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+/* line 44, ../sass/styles-websites.scss */
+.weblinks .dot-overlay {
+  bottom: 15px;
+  color: red;
+  position: absolute;
+  left: 55px;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+/* line 51, ../sass/styles-websites.scss */
+.weblinks:hover .dot-overlay {
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+/* line 55, ../sass/styles-websites.scss */
+.weblinks .dot-content {
+  bottom: 0;
+  color: #333;
+  left: 0;
+  opacity: 0;
+  padding: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+/* line 66, ../sass/styles-websites.scss */
+.weblinks .dot-content h2 {
+  margin-top: 20%;
+  padding: 0;
+  margin-left: 45%;
+  text-align: center;
+}
+
+/* line 72, ../sass/styles-websites.scss */
+.weblinks .dot-content p {
+  width: 45%;
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 45%;
+}
+
+/* line 78, ../sass/styles-websites.scss */
+.weblinks:hover .dot-content {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}

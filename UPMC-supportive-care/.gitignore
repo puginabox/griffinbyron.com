@@ -1,0 +1,10 @@
+
+#.gitignore template
+ 
+www
+node_modules
+vendor
+js/lib
+.DS_Store
+.sass-cache
+npm-debug.log

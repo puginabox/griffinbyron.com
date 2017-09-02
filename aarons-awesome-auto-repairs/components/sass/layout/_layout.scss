@@ -1,0 +1,403 @@
+
+//-----------------sections -------------|
+section, footer { 
+    //remove all these ID's after finished
+//    height: 600px;
+    float: left;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 20px 0;
+    clear: both;
+}
+// to compensate for scrollto and opacity effect
+section article.wrapper {
+    margin-top: 90px;
+}
+
+/*----------------- About -------------*/
+#about {
+    height: auto;
+    overflow: hidden;
+    margin: 80px auto;
+    h1 {
+        display: none; /* hidden for SEO */
+    }
+    img.banner {
+        position: absolute;
+        left: 0.5%;
+        top: 100px;
+        max-width: 400px;
+    }
+    div, aside {
+        height: 400px;
+        padding: 5px 0;
+        margin: 5px 0;
+//        background: pink;
+        text-align: left;
+    }    
+    div {
+        float: left;
+        width: 37%;    
+    }
+    aside {
+        float: right;
+        width: 56%; 
+//        margin-top: 100px;
+        p {
+            width: 90%;
+        }
+    }
+}
+#the-team {
+//    height: 9x00px;
+    width: 100%;
+    float: left;
+    display: block;
+    margin: 0px auto;
+    padding: 0;
+    text-align: center;
+    z-index: 9999999;
+//    article {
+//        margin-top: 200px;
+//    }
+    .team {
+        display: inline-block;
+        width: 33.3333%;
+        margin: 20px 0;
+        padding: 0;
+        height: 400px;
+        text-align: center;
+        span {
+            visibility: hidden;
+            width: 280px;
+            height: 200px;
+            display: block;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            width: 280px;
+            height: 200px;
+        }
+        p {
+            font-size: 0.9rem;
+            padding: 5px 5%;
+            margin: 5px auto;
+        }
+        h3 {
+            font-size: 1.6rem;
+            padding: 10px 0;
+        }
+    }
+}
+#jackie-simpson {
+    background: url(../images/team/jackie-simpson.jpg) top center / 280px 200px no-repeat;
+}
+#phil-knight {
+    background: url(../images/team/phil-knight.jpg) top center / 280px 200px no-repeat;
+}
+#mike-todd {
+    background: url(../images/team/mike-todd.jpg) top center / 280px 200px no-repeat;
+}
+#aaron-callen {
+    background: url(../images/team/aaron-callen.jpg) top center / 280px 200px no-repeat;
+}
+#jason-grange {
+    background: url(../images/team/jason-grange.jpg) top center / 280px 200px no-repeat;
+}
+#gregg-arch {
+    background: url(../images/team/gregg-arch.jpg) top center / 280px 200px no-repeat;
+}
+#al-williams {
+    background: url(../images/team/al-williams.jpg) top center / 280px 200px no-repeat;
+}
+#scott-pritchard {
+    background: url(../images/team/scott-pritchard.jpg) top center / 280px 200px no-repeat;
+}
+#chris-stevens {
+    background: url(../images/team/chris-stevens.jpg) top center / 280px 200px no-repeat;
+}
+
+
+
+/*----------------- Services -------------*/
+#services {
+
+    padding: 4px 0;
+    margin: 0;
+    h2 {
+        color: $wine;
+            font-size: 2rem;
+            padding: 0;
+            line-height: 1;
+    }
+    article {
+        width: 100%;
+        margin: inherit 0 inherit 0 ;
+    }
+    div {
+        display: inline-block;
+        width: 24%;
+        margin: 20px 0;
+        padding: 0;
+        height: 350px;
+        text-align: left;
+        .services-wrapper {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+        }
+        p {
+            font-size: 0.8rem;
+            padding: 5px 5% 2px 0;
+            color: $neoBlack;
+        }
+        h3 {
+            font-size: 1.4rem;
+            margin: 25px 0;
+        }
+        ul {
+            list-style: circle;
+            width: 80%;
+                padding: 0 20px;
+            margin: 0;
+            color: $clottedCream;
+            li {
+                font-size: 0.6rem;
+                padding: 3px 0;
+                line-height: 160%;
+            }
+        }
+    }
+}
+#services .wrapper div span.repairs {
+    width: 240px;
+    height: 300px;
+    display: block;
+    background: url(../images/services/repairs.png) top center no-repeat;
+    background-size: 240px 300px; 
+}
+#services .wrapper div span.certification {
+    width: 240px;
+    height: 300px;
+    display: block;
+    background: url(../images/services/certification.png) top center no-repeat;
+    background-size: 240px 300px; 
+}
+#services .wrapper div span.electrical {
+    width: 240px;
+    height: 300px;
+    display: block;
+    background: url(../images/services/electrical.png) top center no-repeat;
+    background-size: 240px 300px; 
+}
+#services .wrapper div span.audio {
+    width: 240px;
+    height: 300px;
+    display: block;
+    background: url(../images/services/audio.png) top center no-repeat;
+    background-size: 240px 300px; 
+}
+/*----------------- Testimonials -------------*/
+#testimonials {
+//    top: 1500px;
+    background: $mustard;
+    h2 {
+        color: $wine;
+    }
+    .bubble-triangle {
+        margin-left: 50px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 100px 70px 0 0;
+        border-color: $clottedCream transparent transparent transparent;
+    }
+    .wrapper blockquote {
+        width: 20%;
+        height: auto;
+        display: inline-block;
+        margin: 0;
+        padding: 5px 0;
+    }
+    blockquote  p.bubble {
+        font-style: italic;        
+    }
+    blockquote  p.bubble cite {
+        display: block;
+        width: 100%;
+        font-size: 1rem;
+        line-height: 1.8;
+        font-weight: 400;
+        text-align: right;
+//        padding-bottom: 10px;
+    }
+    .wrapper blockquote .bubble {
+        width: 70%;
+        height: auto;
+        padding: 20px;
+        overflow: hidden;
+        font-size: 0.7rem;
+        line-height: 1.2;
+        color: $wine;
+        background: $clottedCream;
+        border-radius: 25px;
+        -moz-border-radius: 25px;
+        -webkit-border-radius: 25px;
+    }
+    .wrapper blockquote .bubble-triangle {
+            margin-top: -50px;
+            margin-left: 50px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 80px 70px 0 0;
+            border-color: $clottedCream transparent transparent transparent;
+        }
+}
+#brands {
+    height: 300px;
+    ul {
+        display: block;
+        height: 200px;
+        width: 100%;
+        background: green;
+            list-style: none;
+        li {
+            display: inline-block;
+            width: 8%;
+            margin: 0 1%;
+            height: 100%;
+            background: orange;
+        }
+    }
+    h2 {
+        margin-top: -40px;
+        font-size: 2.4rem;
+        color: $wine;
+    }
+}
+
+/*----------------- Contact -------------*/
+#contact {
+//    top: 2000px;
+//    height: 700px;
+//    background: $gunMetal;
+    h2 {
+        margin-top: -40px;
+        color: $neoBlack; 
+    }
+}
+#twitter-feed {
+    display: inline-block;
+    width: 25%;
+}
+
+#hours, #first-time {
+height: 407px;
+    margin: 0 0.1%;
+    display: inline-block;    
+background-color: #fff;
+border-radius: 5px;
+border: 1px solid #e8e8e8;
+}
+#estimate {
+    float: right;
+    width: 75%;
+    h3 {        
+        font-size: 1.3rem;
+        margin: 1.2rem 0;
+        padding: 5px 0;
+        border-top: 1px solid rgba($gunMetal, 0.3);
+    }
+    p {
+        font-size: 0.9rem;
+        padding: 0 5px;
+        margin: 5px auto;
+    }
+}
+#first-time {
+    float: right;
+    width: 37%;
+    padding: 0;
+    margin: 0 10px 0 0; 
+    P {
+        text-align: left;
+        padding: 10px 0;
+        margin-left: 10%;
+    }
+}
+#hours {
+    width: 60%;
+    span {
+        font-weight: bold;
+    }
+}
+#twitter-widget-0 {
+    max-width: none !important;
+    width: 100% !important;
+    position: relative !important;
+}
+form {
+    margin: 5px auto;
+    margin-left: 10%;
+    text-align: center;
+}
+input {
+    border-radius: 3px;
+    background-color: #fff;
+    font-family: inherit;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: rgba(0, 0, 0, 0.75);
+    display: block;
+    font-size: 0.9rem;
+    margin: 1rem;
+    padding: 0.2rem;
+    width: 80%;
+}
+.button {
+    cursor: pointer;
+    background: rgba($gunMetal, 0);
+    &:hover {
+        background: rgba($gunMetal, 0.6);
+    }
+}
+/*----------------- Footer --------------------*/
+
+#main-footer {
+    height: 300px;
+    padding: 0;
+    margin: 0;
+    sup {
+        display: block;
+        width: 100%;
+        margin: 20px 0;
+        font-family: "Roboto", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 1.3rem;
+        margin: 1.2rem 0;
+        padding: 5px 0;
+        border-top: 1px solid rgba(87, 111, 124, 0.3);
+    }
+}
+#map {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 190px;
+    margin: 0 auto;
+    max-width: none !important;
+    img {
+        opacity: 0.6;
+    }
+    overflow: hidden; 
+    transform: translateZ(0px); 
+}
+
+

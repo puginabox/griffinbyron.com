@@ -1,0 +1,50 @@
+
+.list_carousel {
+	margin: 0 0 30px 60px;
+	max-width: 100%;
+}
+.list_carousel ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+}
+.list_carousel li {
+	text-align: center;
+	width: 266px;
+	height: 319px;	
+	padding: 0;
+	margin: 6px;
+	display: block;
+	float: left;
+}
+.list_carousel.responsive {
+	width: auto;
+	margin-left: 0;
+}
+.clearfix {
+	float: none;
+	clear: both;
+}
+.prev {
+	float: left;
+	margin-left: 25%;
+}
+.next {
+	float: right;
+	margin-right: 25%;
+}
+
+#foo5 .one {
+	background: url(../img/mobile/go/1.jpg) no-repeat;
+}
+#foo5 .two {
+
+	background: url(../img/mobile/go/2.jpg) no-repeat;
+}
+#foo5 .three {
+	background: url(../img/mobile/go/3.jpg) no-repeat;
+}
+#foo5 .four {	
+	background: url(../img/mobile/go/4.jpg) no-repeat;
+}

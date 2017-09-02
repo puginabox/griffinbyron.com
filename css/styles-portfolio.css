@@ -1,0 +1,734 @@
+/*-------------------- clearfix -------------------*/
+/* line 55, ../sass/styles-portfolio.scss */
+.clearFixit:before, .clearFixit:after {
+  content: "";
+  display: table;
+}
+
+/* line 59, ../sass/styles-portfolio.scss */
+.clearFixit:after {
+  clear: both;
+}
+
+/* line 62, ../sass/styles-portfolio.scss */
+.clearFixit {
+  zoom: 1;
+}
+
+/*======================= @BASE =======================*/
+/* apply a natural box layout model to all elements */
+/* line 68, ../sass/styles-portfolio.scss */
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 77, ../sass/styles-portfolio.scss */
+html, body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  width: 100%;
+  height: 25000px;
+  margin: 0 auto;
+  font-family: 'LatoLight', sans-serif;
+  color: #3d454d;
+}
+
+/* =================== headings ===================*/
+/* line 87, ../sass/styles-portfolio.scss */
+p, li {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  margin: 0 auto;
+  text-align: justify;
+  width: 30%;
+  padding: 0.5em;
+  color: #3d454d;
+}
+@media (max-width: 400px) {
+  /* line 87, ../sass/styles-portfolio.scss */
+  p, li {
+    width: 90%;
+    background: rgba(255, 255, 255, 0.8);
+    font-weight: 100;
+    font-size: 11px;
+  }
+}
+@media (min-width: 401px) and (max-width: 1000px) {
+  /* line 87, ../sass/styles-portfolio.scss */
+  p, li {
+    width: 60%;
+    font-weight: 100;
+    font-size: 14px;
+  }
+}
+
+/* line 108, ../sass/styles-portfolio.scss */
+b {
+  padding: 0.5em;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* line 114, ../sass/styles-portfolio.scss */
+h1, h2, h3, h4, h5 {
+  font-weight: 200;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 3px;
+  word-spacing: 1px;
+  padding: 0.4em;
+}
+@media (max-width: 400px) {
+  /* line 114, ../sass/styles-portfolio.scss */
+  h1, h2, h3, h4, h5 {
+    padding: 0.3em;
+    background: rgba(255, 255, 255, 0.8);
+  }
+}
+@media (min-width: 401px) and (max-width: 1000px) {
+  /* line 114, ../sass/styles-portfolio.scss */
+  h1, h2, h3, h4, h5 {
+    padding: 0.5em;
+  }
+}
+
+/* line 128, ../sass/styles-portfolio.scss */
+h1 {
+  font-weight: 200;
+  font-size: 2em;
+  margin: 0 auto 4em auto;
+  padding: 0;
+  text-align: center;
+  color: #f7931d;
+}
+
+/* line 136, ../sass/styles-portfolio.scss */
+h2 {
+  font-size: 1.5em;
+  color: #52cfff;
+}
+
+/* line 140, ../sass/styles-portfolio.scss */
+h3 {
+  font-size: 1em;
+  color: #52cfff;
+}
+
+/* line 144, ../sass/styles-portfolio.scss */
+h4 {
+  font-size: 1.4em;
+  color: #3d454d;
+}
+
+/*======================= @links=======================*/
+/* line 149, ../sass/styles-portfolio.scss */
+a:link {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #97e365;
+}
+@media (max-width: 400px) {
+  /* line 149, ../sass/styles-portfolio.scss */
+  a:link {
+    font-size: 1em;
+  }
+}
+
+/* line 157, ../sass/styles-portfolio.scss */
+a:visited {
+  text-decoration: none;
+  color: #52cfff;
+}
+
+/* line 158, ../sass/styles-portfolio.scss */
+a:hover {
+  text-decoration: none;
+  color: #fe7271;
+}
+
+/* line 159, ../sass/styles-portfolio.scss */
+a:active {
+  text-decoration: none;
+  color: #fe7271;
+}
+
+/*======================= @MAIN NAV ======================*/
+/* line 162, ../sass/styles-portfolio.scss */
+#floating {
+  display: inline;
+  position: fixed;
+  top: 60px;
+  width: 100%;
+  height: auto;
+  z-index: 998;
+}
+
+/* line 170, ../sass/styles-portfolio.scss */
+#main-nav {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  text-align: center;
+  z-index: 998;
+}
+
+/* line 178, ../sass/styles-portfolio.scss */
+.circle {
+  display: inline-block;
+  border-radius: 100%;
+  cursor: pointer;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 200;
+  line-height: 3.2em;
+  text-indent: -8999px;
+  z-index: 998;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+/* line 196, ../sass/styles-portfolio.scss */
+.circle:focus {
+  margin: 0;
+  color: white;
+  z-index: 999;
+  text-indent: 0;
+}
+
+/* line 202, ../sass/styles-portfolio.scss */
+.circle:hover {
+  margin: 0;
+  color: white;
+  z-index: 999;
+  text-indent: 0;
+}
+
+/* line 208, ../sass/styles-portfolio.scss */
+.circle:after {
+  z-index: 998;
+  text-indent: -8999px;
+}
+
+/* line 212, ../sass/styles-portfolio.scss */
+ul {
+  list-style: none;
+}
+
+/*------------------ individual anchors ---------------------*/
+/*------------------ home-nav ---------------------*/
+/* line 220, ../sass/styles-portfolio.scss */
+.circle:nth-child(1) {
+  width: 7em;
+  height: 7em;
+  background: rgba(255, 255, 255, 0.7);
+  border: 5px solid #97e365;
+}
+@media (max-width: 400px) {
+  /* line 220, ../sass/styles-portfolio.scss */
+  .circle:nth-child(1) {
+    width: 2.2em;
+    height: 2.2em;
+    border: 4px solid #97e365;
+  }
+}
+@media (min-width: 401px) and (max-width: 1000px) {
+  /* line 220, ../sass/styles-portfolio.scss */
+  .circle:nth-child(1) {
+    width: 2.5em;
+    height: 2.5em;
+    border: 4px solid #97e365;
+  }
+}
+
+/*--------------- hover -----*/
+/* line 237, ../sass/styles-portfolio.scss */
+.circle:nth-child(1):hover {
+  width: 9em;
+  height: 9em;
+  background: #97e365;
+}
+@media (max-width: 400px) {
+  /* line 237, ../sass/styles-portfolio.scss */
+  .circle:nth-child(1):hover {
+    width: 5em;
+    height: 5em;
+  }
+}
+@media (min-width: 401px) and (max-width: 1000px) {
+  /* line 237, ../sass/styles-portfolio.scss */
+  .circle:nth-child(1):hover {
+    width: 5em;
+    height: 5em;
+  }
+}
+
+/*------------------ web-nav ---------------------*/
+/* line 252, ../sass/styles-portfolio.scss */
+.circle:nth-child(2) {
+  width: 9em;
+  height: 9em;
+  background: rgba(255, 255, 255, 0.8);
+  border: 5px solid #52cfff;
+}
+@media (max-width: 400px) {
+  /* line 252, ../sass/styles-portfolio.scss */
+  .circle:nth-child(2) {
+    width: 4.1em;
+    height: 4.1em;
+    border: 4px solid #52cfff;
+  }
+}
+@media (min-width: 401px) and (max-width: 1000px) {
+  /* line 252, ../sass/styles-portfolio.scss */
+  .circle:nth-child(2) {
+    width: 4.5em;
+    height: 4.5em;
+    border: 4px solid #52cfff;
+  }
+}
+
+/*--------------- hover -----*/
+/* line 269, ../sass/styles-portfolio.scss */
+.circle:nth-child(2):hover {
+  width: 12em;
+  height: 12em;
+  background: #52cfff;
+}
+@media (max-width: 400px) {
+  /* line 269, ../sass/styles-portfolio.scss */
+  .circle:nth-child(2):hover {
+    width: 7em;
+    height: 7em;
+  }
+}
+@media (min-width: 401px) and (max-width: 1000px) {
+  /* line 269, ../sass/styles-portfolio.scss */
+  .circle:nth-child(2):hover {
+    width: 7em;
+    height: 7em;
+  }
+}
+
+/*------------------ mobile-nav ---------------------*/
+/* line 283, ../sass/styles-portfolio.scss */
+.circle:nth-child(3) {
+  width: 6.2em;
+  height: 6.2em;
+  background: rgba(255, 255, 255, 0.8);
+  border: 5px solid #97e365;
+}
+@media (max-width: 400px) {
+  /* line 283, ../sass/styles-portfolio.scss */
+  .circle:nth-child(3) {
+    width: 3.1em;
+    height: 3.1em;
+    border: 4px solid #97e365;
+  }
+}
+@media (min-width: 401px) and (max-width: 1000px) {
+  /* line 283, ../sass/styles-portfolio.scss */
+  .circle:nth-child(3) {
+    width: 3.3em;
+    height: 3.3em;
+    border: 4px solid #97e365;
+  }
+}
+
+/*--------------- hover -----*/
+/* line 300, ../sass/styles-portfolio.scss */
+.circle:nth-child(3):hover {
+  width: 11em;
+  height: 11em;
+  background: #97e365;
+}
+@media (max-width: 400px) {
+  /* line 300, ../sass/styles-portfolio.scss */
+  .circle:nth-child(3):hover {
+    width: 6em;
+    height: 6em;
+  }
+}
+@media (min-width: 401px) and (max-width: 1000px) {
+  /* line 300, ../sass/styles-portfolio.scss */
+  .circle:nth-child(3):hover {
+    width: 6em;
+    height: 6em;
+  }
+}
+
+/*------------------ design-nav ---------------------*/
+/* line 314, ../sass/styles-portfolio.scss */
+.circle:nth-child(4) {
+  width: 5em;
+  height: 5em;
+  background: rgba(255, 255, 255, 0.8);
+  border: 5px solid #52cfff;
+}
+@media (max-width: 400px) {
+  /* line 314, ../sass/styles-portfolio.scss */
+  .circle:nth-child(4) {
+    width: 2em;
+    height: 2em;
+    border: 3px solid #52cfff;
+  }
+}
+@media (min-width: 401px) and (max-width: 1000px) {
+  /* line 314, ../sass/styles-portfolio.scss */
+  .circle:nth-child(4) {
+    width: 2.5em;
+    height: 2.5em;
+    border: 3px solid #52cfff;
+  }
+}
+
+/*--------------- hover -----*/
+/* line 331, ../sass/styles-portfolio.scss */
+.circle:nth-child(4):hover {
+  width: 10em;
+  height: 10em;
+  background: #52cfff;
+}
+@media (max-width: 400px) {
+  /* line 331, ../sass/styles-portfolio.scss */
+  .circle:nth-child(4):hover {
+    width: 6em;
+    height: 6em;
+  }
+}
+@media (min-width: 401px) and (max-width: 1000px) {
+  /* line 331, ../sass/styles-portfolio.scss */
+  .circle:nth-child(4):hover {
+    width: 6em;
+    height: 6em;
+  }
+}
+
+/*------------------ process-nav ---------------------*/
+/* line 345, ../sass/styles-portfolio.scss */
+.circle:nth-child(5) {
+  width: 4em;
+  height: 4em;
+  background: rgba(255, 255, 255, 0.8);
+  border: 4px solid #97e365;
+}
+@media (max-width: 400px) {
+  /* line 345, ../sass/styles-portfolio.scss */
+  .circle:nth-child(5) {
+    width: 1.4em;
+    height: 1.4em;
+    border: 2px solid #97e365;
+  }
+}
+@media (min-width: 401px) and (max-width: 1000px) {
+  /* line 345, ../sass/styles-portfolio.scss */
+  .circle:nth-child(5) {
+    width: 2em;
+    height: 2em;
+    border: 3px solid #97e365;
+  }
+}
+
+/*--------------- hover -----*/
+/* line 362, ../sass/styles-portfolio.scss */
+.circle:nth-child(5):hover {
+  width: 8em;
+  height: 8em;
+  background: #97e365;
+}
+@media (max-width: 400px) {
+  /* line 362, ../sass/styles-portfolio.scss */
+  .circle:nth-child(5):hover {
+    width: 4em;
+    height: 4em;
+  }
+}
+@media (min-width: 401px) and (max-width: 1000px) {
+  /* line 362, ../sass/styles-portfolio.scss */
+  .circle:nth-child(5):hover {
+    width: 4em;
+    height: 4em;
+  }
+}
+
+/*------------------ me-nav ---------------------*/
+/* line 376, ../sass/styles-portfolio.scss */
+.circle:nth-child(6) {
+  width: 3em;
+  height: 3em;
+  background: rgba(255, 255, 255, 0.8);
+  border: 4px solid #52cfff;
+}
+@media (max-width: 400px) {
+  /* line 376, ../sass/styles-portfolio.scss */
+  .circle:nth-child(6) {
+    width: 1.2em;
+    height: 1.2em;
+    border: 2px solid #52cfff;
+  }
+}
+@media (min-width: 401px) and (max-width: 1000px) {
+  /* line 376, ../sass/styles-portfolio.scss */
+  .circle:nth-child(6) {
+    width: 1.5em;
+    height: 1.5em;
+    border: 3px solid #52cfff;
+  }
+}
+
+/*--------------- hover -----*/
+/* line 393, ../sass/styles-portfolio.scss */
+.circle:nth-child(6):hover {
+  width: 7em;
+  height: 7em;
+  background: #52cfff;
+}
+@media (max-width: 400px) {
+  /* line 393, ../sass/styles-portfolio.scss */
+  .circle:nth-child(6):hover {
+    width: 3em;
+    height: 3em;
+  }
+}
+@media (min-width: 401px) and (max-width: 1000px) {
+  /* line 393, ../sass/styles-portfolio.scss */
+  .circle:nth-child(6):hover {
+    width: 3em;
+    height: 3em;
+  }
+}
+
+/******************* @design******************/
+/* line 407, ../sass/styles-portfolio.scss */
+#design {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  float: left;
+  display: inline;
+}
+@media (max-width: 400px) {
+  /* line 407, ../sass/styles-portfolio.scss */
+  #design {
+    top: 11300px;
+  }
+}
+@media (min-width: 401px) and (max-width: 1000px) {
+  /* line 407, ../sass/styles-portfolio.scss */
+  #design {
+    top: 11300px;
+    margin: 0 auto;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+  }
+}
+
+/* line 423, ../sass/styles-portfolio.scss */
+#design h1 {
+  padding: 0.1em;
+  margin-top: 0.1em;
+}
+
+/* line 427, ../sass/styles-portfolio.scss */
+.fourths {
+  width: 25%;
+  height: auto;
+  float: left;
+  margin: 2em auto;
+  display: inline-block;
+  padding: 0.5em;
+  overflow: hidden;
+}
+@media (max-width: 400px) {
+  /* line 427, ../sass/styles-portfolio.scss */
+  .fourths {
+    width: 100%;
+  }
+}
+@media (min-width: 401px) and (max-width: 1000px) {
+  /* line 427, ../sass/styles-portfolio.scss */
+  .fourths {
+    width: 50%;
+  }
+}
+
+/* line 443, ../sass/styles-portfolio.scss */
+.thumbnail {
+  float: left;
+  margin: 2px;
+  border: 3px solid #f7931d;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+/* line 453, ../sass/styles-portfolio.scss */
+a.thumbnail img {
+  display: inline-block;
+  width: 85px;
+  height: 85px;
+}
+
+/* line 458, ../sass/styles-portfolio.scss */
+.clear_both {
+  clear: both;
+  line-height: 1px;
+}
+
+/* line 463, ../sass/styles-portfolio.scss */
+.back ul {
+  position: absolute;
+  top: 190px;
+  left: 2em;
+  text-align: left;
+  list-style: circle;
+}
+
+/* line 470, ../sass/styles-portfolio.scss */
+.back li {
+  font-size: 0.7em;
+}
+
+/* line 473, ../sass/styles-portfolio.scss */
+#portfolio h3 {
+  color: #f7931d;
+}
+
+/******************* @design2 ******************/
+/* line 478, ../sass/styles-portfolio.scss */
+#design2 {
+  position: absolute;
+  float: left;
+  top: 600px;
+  width: 100%;
+  display: inline;
+}
+
+/* line 494, ../sass/styles-portfolio.scss */
+#design2 h1 {
+  padding: 0.1em;
+  margin-top: 0.1em;
+}
+
+/******************* @video******************/
+/* line 500, ../sass/styles-portfolio.scss */
+#video {
+  top: 4400px;
+  width: 100%;
+  float: left;
+  left: 0;
+  right: 0;
+  margin: 1em 0;
+  position: absolute;
+  text-align: center;
+  height: auto;
+  display: inline;
+  z-index: 0;
+}
+
+/* line 513, ../sass/styles-portfolio.scss */
+#video h1 {
+  margin-bottom: 200px;
+}
+
+/* line 516, ../sass/styles-portfolio.scss */
+#video article {
+  width: 100%;
+  float: left;
+  height: auto;
+  margin: 1em auto;
+}
+
+/* line 525, ../sass/styles-portfolio.scss */
+#video .fourths {
+  height: auto;
+}
+
+/* line 528, ../sass/styles-portfolio.scss */
+#video .fourths p {
+  width: 90%;
+}
+
+/******************* @media******************/
+/* line 532, ../sass/styles-portfolio.scss */
+#media {
+  position: absolute;
+  top: 9800px;
+  width: 100%;
+  height: 200px;
+  background: #fe7271;
+  margin: 0 auto;
+  padding: 0;
+  left: 0;
+  right: 0;
+  z-index: 80;
+  text-align: center;
+}
+
+/******************** @process ****************/
+/* line 549, ../sass/styles-portfolio.scss */
+#painting {
+  position: absolute;
+  float: left;
+  top: 11650px;
+  width: 80%;
+  left: 0;
+  right: 0;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0.2em;
+  display: inline;
+}
+
+/* line 562, ../sass/styles-portfolio.scss */
+.thirds {
+  width: auto;
+  left: 0;
+  right: 0;
+  margin: 5em auto;
+  display: inline-block;
+  overflow: hidden;
+  height: 300px;
+  text-align: center;
+}
+
+/* line 572, ../sass/styles-portfolio.scss */
+#painting .thirds .photos, #painting .thirds .photos .thumbnail_container {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/******************** @me ****************/
+/* line 580, ../sass/styles-portfolio.scss */
+#photography {
+  position: absolute;
+  top: 13900px;
+  width: 50%;
+  height: 200px;
+  background: #fe7271;
+  left: 0;
+  right: 0;
+  padding-top: 4em;
+  margin: 2em auto;
+  text-align: center;
+  z-index: 30;
+}

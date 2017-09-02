@@ -1,0 +1,96 @@
+
+.mobile header {
+    width: 100%;
+    background: $wine;
+    background: none;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    position: fixed;
+    text-align: right;
+    right: 0;
+    top: 0;
+z-index: 9999999;
+}
+.hamburger-button {
+    background: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50px;
+    line-height: 45px;
+    padding: 0px 15px 0px 15px;
+    color: $wine;
+    border: 0;
+    font-size: 2.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    z-index: 10000;
+}
+
+
+.cross-hamburger {
+    background: none;
+    position: fixed;
+    top: 0px;
+    width: 50px;
+    right: 0;
+    padding: 0px 5px 0px 15px;
+    color: #fff;
+    border: 0;
+    font-size: 3rem;
+    line-height: 65px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    z-index: 1000000;
+}
+
+.hamburger-menu {
+    z-index: 100000;
+    font-weight: bold;
+    font-size: 0.8em;
+    width: 100%;
+    margin: 0 auto;
+    background: $wine;
+    padding: 0;
+    display: block;
+    position: fixed;
+    padding: 0;
+    top: 0;
+    text-align: center;
+    list-style-type: none;
+    list-style-image: none;
+}
+.hamburger-menu li {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px 0 15px 0;
+    border-bottom: rgba($clottedCream, 0.4) 1px solid;
+}
+.hamburger-menu li:hover {
+    background: $wine;
+    padding: 15px 0 15px 0;
+    border-bottom: rgba($clottedCream, 0.4) 1px solid;
+}
+
+.hamburger-menu ul li a {
+    text-decoration: none;
+    margin: 0px;
+    color: #fff;
+}
+.hamburger-menu ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.hamburger-menu a {
+    text-decoration: none;
+    color: white;
+}
+.mobile {
+    margin: 0 auto;
+    text-align: center;
+    display: none;
+}
